@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<title>PowNed Redactiedashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root {
+    --pn-magenta: #e2148b;
+    --pn-paars:   #9c2d8f;
+    --pn-donker:  #363636;
+    --pn-grijs:   #aaaaaa;
+    --pn-licht:   #f2f2f1;
+    --pn-gradient: linear-gradient(135deg, #9c2d8f 0%, #e2148b 100%);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--pn-licht); color: #1a1a1a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px; line-height: 1.45; }
+
+  header.topbar { display:flex; align-items:center; gap:14px; padding:14px 20px;
+    background: var(--pn-donker); border-bottom:1px solid #000; color:#fff;
+    position:sticky; top:0; z-index:10; }
+  header.topbar .logo { font-weight:900; font-size:20px; letter-spacing:1px;
+    background: var(--pn-gradient); padding:6px 22px 6px 12px; border-radius:3px;
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%);
+    text-shadow:0 1px 2px rgba(0,0,0,.25); }
+  header.topbar h1 { font-size:15px; font-weight:500; margin:0; opacity:.95; }
+  header.topbar .meta { margin-left:auto; display:flex; gap:14px; align-items:center;
+    color:#d0d0d0; font-size:12px; }
+  header.topbar button { background: var(--pn-gradient); color:#fff; border:none;
+    padding:8px 16px; border-radius:4px; cursor:pointer; font-size:13px; font-weight:600; }
+  header.topbar button:hover { filter: brightness(1.08); }
+
+  main { display:grid; grid-template-columns: 260px 1fr; min-height: calc(100vh - 56px); }
+  aside.filters { background:#fff; border-right:1px solid #e6e6e2; padding:18px 16px; overflow-y:auto; }
+  aside.filters h3 { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.6px;
+    color:#6b6b6b; margin:18px 0 8px; padding-bottom:4px; border-bottom:1px solid #ececec; }
+  aside.filters h3:first-child { margin-top:0; }
+  aside.filters label.check { display:flex; align-items:center; gap:8px; padding:4px 0;
+    cursor:pointer; font-size:13px; }
+  aside.filters input[type="checkbox"], aside.filters input[type="radio"] { accent-color: #e2148b; }
+  aside.filters input[type="range"] { width:100%; accent-color:#e2148b; }
+  aside.filters .reset-btn { margin-top:14px; width:100%; padding:7px; background:#f0f0ec;
+    border:1px solid #ddd; border-radius:4px; cursor:pointer; font-size:12px; }
+
+  section.feed { padding:20px 24px; }
+  .feed-header { display:flex; align-items:baseline; gap:12px; margin-bottom:16px; }
+  .feed-header h2 { margin:0; font-size:18px; }
+  .feed-header .count { color:#6b6b6b; font-size:13px; }
+  .tabs { display:flex; gap:4px; margin-left:auto; }
+  .tab { padding:6px 12px; border-radius:4px; cursor:pointer; font-size:13px;
+    background:transparent; border:1px solid #ddd; color:#444; }
+  .tab.active { background:#14110f; color:#fff; border-color:#14110f; }
+
+  .card { background:#fff; border:1px solid #e6e6e2; border-radius:6px; padding:14px 16px;
+    margin-bottom:12px; display:flex; gap:14px; align-items:flex-start; transition: box-shadow .15s, opacity .2s; }
+  .card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+  .card.taken { opacity:.55; background:#f1f7f1; }
+  .card.rejected { opacity:.35; }
+  .thumb { flex-shrink:0; width:140px; height:90px; border-radius:4px; overflow:hidden;
+    background: var(--pn-gradient); position:relative; display:flex; align-items:center; justify-content:center;
+    color: rgba(255,255,255,0.9); font-weight:700; font-size:11px; letter-spacing:1px;
+    text-shadow:0 1px 2px rgba(0,0,0,.25); }
+  .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+  .thumb .label { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; pointer-events:none; }
+  .body { flex:1; min-width:0; }
+
+  .card-head { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:6px; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:99px; font-size:11px; font-weight:600; }
+  .badge.score-hi { background: var(--pn-gradient); color:#fff; box-shadow:0 1px 2px rgba(156,45,143,.25); }
+  .badge.score-mid { background:#f5a623; color:#14110f; }
+  .badge.score-lo { background:#d8d8d4; color:#555; }
+  .badge.cat { background:#f0f0ec; color:#444; }
+  .badge.loc { background:#efeaf3; color:#6b3d7a; }
+  .badge.source { background:transparent; color:#6b6b6b; border:1px solid #e0e0dc; font-weight:500; }
+
+  .card h4 { margin:4px 0; font-size:15px; font-weight:600; line-height:1.35; }
+  .card h4 a { color:#14110f; text-decoration:none; }
+  .card h4 a:hover { text-decoration:underline; }
+  .card .summary { color:#333; margin:6px 0; }
+  .card .reason { background:#faf8f4; border-left:2px solid #e2148b; padding:6px 10px;
+    margin:8px 0; font-size:12.5px; color:#555; font-style:italic; }
+  .card .reason b { color:#e2148b; font-style:normal; }
+  .card .meta-row { color:#888; font-size:11.5px; margin-top:6px; }
+  .card .actions { display:flex; gap:8px; margin-top:10px; }
+  .card .actions button { padding:5px 10px; border-radius:4px; cursor:pointer; font-size:12px;
+    border:1px solid #ddd; background:#fff; }
+  .card .actions button.take { border-color:#2a8a3f; color:#2a8a3f; }
+  .card .actions button.reject { border-color:#b03030; color:#b03030; }
+
+  .empty, .loading { padding:60px 20px; text-align:center; color:#888; }
+  .spinner { display:inline-block; width:14px; height:14px; border:2px solid #e2148b;
+    border-top-color:transparent; border-radius:50%; animation: spin .8s linear infinite; vertical-align:-2px; margin-right:6px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .data-source-note { background:#fff8e6; border:1px solid #f0d77a; padding:10px 14px;
+    border-radius:4px; font-size:12.5px; color:#6a5618; margin-bottom:14px; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <span class="logo">POWNED</span>
+  <h1>Redactiedashboard</h1>
+  <div class="meta">
+    <span id="lastUpdated">—</span>
+    <button id="refreshBtn">Vernieuwen</button>
+  </div>
+</header>
+
+<main>
+  <aside class="filters">
+    <h3>Status</h3>
+    <div id="statusTabs" class="tabs" style="flex-wrap:wrap; gap:4px;"></div>
+
+    <h3>Minimum score</h3>
+    <input type="range" id="scoreSlider" min="0" max="100" value="50" />
+    <div style="font-size:12px;color:#6b6b6b;">Score ≥ <b id="scoreVal">50</b></div>
+
+    <h3>Categorieën</h3>
+    <div id="categoryFilters"></div>
+
+    <h3>Bronnen</h3>
+    <div id="sourceFilters"></div>
+
+    <h3>Periode</h3>
+    <div id="dateFilters">
+      <label class="check"><input type="radio" name="datefilter" value="all" checked /> Alles</label>
+      <label class="check"><input type="radio" name="datefilter" value="24h" /> Laatste 24u</label>
+      <label class="check"><input type="radio" name="datefilter" value="48h" /> Laatste 48u</label>
+    </div>
+
+    <button class="reset-btn" id="resetFilters">Filters resetten</button>
+  </aside>
+
+  <section class="feed">
+    <div class="data-source-note" id="dataSourceNote">
+      Verse data verschijnt elke ochtend om 08:30 (Nederlandse tijd) automatisch.
+      Wil je nu een handmatige refresh? Ga in je GitHub-repo naar
+      <b>Actions → Daily refresh → Run workflow</b>.
+    </div>
+    <div class="feed-header">
+      <h2>Feed</h2>
+      <span class="count" id="feedCount"></span>
+      <div class="tabs">
+        <button class="tab active" data-sort="score">Top score</button>
+        <button class="tab" data-sort="date">Nieuwste</button>
+      </div>
+    </div>
+    <div id="feed" class="loading"><span class="spinner"></span> Feeds laden…</div>
+  </section>
+</main>
+
+<script>
+const CATEGORIES = ["Politiek", "Opmerkelijk", "Media", "Misdaad", "Event", "Overig"];
+const STATE_KEY = "powned_state_v1";
+
+let DATA = { items: [], generatedAt: null };
+let state = loadState();
+
+function defaultState() {
+  return {
+    status: {},
+    filters: { minScore: 50, sources: [], categories: CATEGORIES.slice(),
+               statusTab: "open", date: "all", sort: "score" }
+  };
+}
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STATE_KEY);
+    if (!raw) return defaultState();
+    const p = JSON.parse(raw);
+    const d = defaultState();
+    return { ...d, ...p, filters: { ...d.filters, ...(p.filters || {}) } };
+  } catch { return defaultState(); }
+}
+function saveState() { localStorage.setItem(STATE_KEY, JSON.stringify(state)); }
+
+async function loadFeeds() {
+  const feed = document.getElementById("feed");
+  feed.className = "loading";
+  feed.innerHTML = '<span class="spinner"></span> Feeds laden…';
+  try {
+    const url = "feeds.json?t=" + Date.now();   // cache-bust
+    const r = await fetch(url);
+    if (!r.ok) throw new Error("Kon feeds.json niet laden (HTTP " + r.status + ")");
+    DATA = await r.json();
+  } catch (e) {
+    feed.innerHTML = '<div class="empty">⚠ Kon feeds.json niet laden: ' + e.message + '<br>De eerste run moet nog draaien. Ga in GitHub naar <b>Actions → Daily refresh → Run workflow</b>.</div>';
+    return;
+  }
+  // Sources uit data + filter-state opbouwen
+  const allSources = Array.from(new Set(DATA.items.map(i => i.source))).sort();
+  if (!state.filters.sources.length) state.filters.sources = allSources.slice();
+  window.__allSources = allSources;
+  document.getElementById("lastUpdated").textContent =
+    "Laatst bijgewerkt: " + new Date(DATA.generatedAt).toLocaleString("nl-NL", { dateStyle:"short", timeStyle:"short" });
+  render();
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+}
+function scoreClass(s) { return s >= 70 ? "score-hi" : s >= 40 ? "score-mid" : "score-lo"; }
+function relativeTime(d) {
+  const s = Math.floor((Date.now() - d.getTime()) / 1000);
+  if (s < 60) return `${s}s geleden`;
+  if (s < 3600) return `${Math.floor(s/60)} min geleden`;
+  if (s < 86400) return `${Math.floor(s/3600)} uur geleden`;
+  return `${Math.floor(s/86400)} dgn geleden`;
+}
+
+function applyFilters() {
+  const f = state.filters;
+  const cutoff = f.date === "24h" ? Date.now() - 24*3600*1000 :
+                 f.date === "48h" ? Date.now() - 48*3600*1000 : 0;
+  return DATA.items.filter(it => {
+    if ((it.score || 0) < f.minScore) return false;
+    if (!f.sources.includes(it.source)) return false;
+    if (!f.categories.includes(it.category || "Overig")) return false;
+    if (cutoff && new Date(it.pubDate).getTime() < cutoff) return false;
+    const st = state.status[it.id];
+    if (f.statusTab === "open" && st) return false;
+    if (f.statusTab === "taken" && st !== "taken") return false;
+    if (f.statusTab === "rejected" && st !== "rejected") return false;
+    return true;
+  }).sort((a, b) => f.sort === "date"
+    ? new Date(b.pubDate) - new Date(a.pubDate)
+    : (b.score || 0) - (a.score || 0));
+}
+
+function render() {
+  renderFilters();
+  renderFeed();
+}
+
+function renderFilters() {
+  const counts = { open:0, taken:0, rejected:0 };
+  DATA.items.forEach(it => {
+    const st = state.status[it.id]; if (!st) counts.open++; else counts[st]++;
+  });
+  const tabs = [
+    { key:"open",     label:"Open",      n:counts.open },
+    { key:"taken",    label:"Oppakken",  n:counts.taken },
+    { key:"rejected", label:"Afgewezen", n:counts.rejected },
+    { key:"all",      label:"Alles",     n:DATA.items.length },
+  ];
+  document.getElementById("statusTabs").innerHTML = tabs.map(t =>
+    `<button class="tab ${state.filters.statusTab === t.key ? "active" : ""}" data-tab="${t.key}">${t.label} (${t.n})</button>`).join("");
+
+  document.getElementById("scoreSlider").value = state.filters.minScore;
+  document.getElementById("scoreVal").textContent = state.filters.minScore;
+
+  document.getElementById("categoryFilters").innerHTML = CATEGORIES.map(c =>
+    `<label class="check"><input type="checkbox" data-cat="${c}" ${state.filters.categories.includes(c) ? "checked" : ""} /> ${c}</label>`
+  ).join("");
+
+  const sources = window.__allSources || [];
+  document.getElementById("sourceFilters").innerHTML = sources.map(s =>
+    `<label class="check"><input type="checkbox" data-src="${escapeHtml(s)}" ${state.filters.sources.includes(s) ? "checked" : ""} /> ${escapeHtml(s)}</label>`
+  ).join("");
+
+  document.querySelectorAll('input[name="datefilter"]').forEach(r => r.checked = (r.value === state.filters.date));
+  document.querySelectorAll('.feed-header .tab').forEach(t => t.classList.toggle("active", t.dataset.sort === state.filters.sort));
+}
+
+function renderFeed() {
+  const filtered = applyFilters();
+  const feed = document.getElementById("feed");
+  feed.className = "";
+  document.getElementById("feedCount").textContent = `${filtered.length} item${filtered.length === 1 ? "" : "s"}`;
+  if (!filtered.length) {
+    feed.innerHTML = `<div class="empty">Geen items passen bij deze filters.</div>`;
+    return;
+  }
+  feed.innerHTML = filtered.map(it => {
+    const st = state.status[it.id];
+    const cls = ["card"]; if (st === "taken") cls.push("taken"); if (st === "rejected") cls.push("rejected");
+    const dt = new Date(it.pubDate);
+    const thumb = `
+      <div class="thumb">
+        ${it.image ? `<img src="${it.image}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'" />` : ""}
+        <span class="label">${escapeHtml(it.source || "")}</span>
+      </div>`;
+    return `
+      <div class="${cls.join(" ")}" data-id="${it.id}">
+        ${thumb}
+        <div class="body">
+          <div class="card-head">
+            <span class="badge ${scoreClass(it.score)}">Score ${it.score}</span>
+            <span class="badge cat">${escapeHtml(it.category || "Overig")}</span>
+            <span class="badge loc">📍 ${escapeHtml(it.location || "Landelijk")}</span>
+            <span class="badge source">${escapeHtml(it.source)}</span>
+            ${st === "taken" ? '<span class="badge cat">✓ Opgepakt</span>' : ""}
+            ${st === "rejected" ? '<span class="badge cat">✗ Afgewezen</span>' : ""}
+          </div>
+          <h4><a href="${escapeHtml(it.url)}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a></h4>
+          <div class="summary">${escapeHtml(it.summary || it.description || "")}</div>
+          ${it.reason ? `<div class="reason"><b>Waarom:</b> ${escapeHtml(it.reason)}</div>` : ""}
+          <div class="meta-row">${relativeTime(dt)} · ${dt.toLocaleString("nl-NL")}</div>
+          <div class="actions">
+            <button class="open" data-action="open">Lees origineel</button>
+            <button class="take" data-action="take">Oppakken</button>
+            <button class="reject" data-action="reject">Afwijzen</button>
+            ${st ? `<button data-action="reset">Reset</button>` : ""}
+          </div>
+        </div>
+      </div>`;
+  }).join("");
+}
+
+// Events
+document.getElementById("refreshBtn").addEventListener("click", loadFeeds);
+document.getElementById("scoreSlider").addEventListener("input", e => {
+  state.filters.minScore = +e.target.value;
+  document.getElementById("scoreVal").textContent = e.target.value;
+  saveState(); renderFeed();
+});
+document.getElementById("statusTabs").addEventListener("click", e => {
+  const t = e.target.closest("[data-tab]"); if (!t) return;
+  state.filters.statusTab = t.dataset.tab; saveState(); render();
+});
+document.querySelectorAll('.feed-header .tab').forEach(tab => {
+  tab.addEventListener("click", () => { state.filters.sort = tab.dataset.sort; saveState(); render(); });
+});
+document.getElementById("categoryFilters").addEventListener("change", e => {
+  const c = e.target.dataset.cat; if (!c) return;
+  if (e.target.checked) state.filters.categories.push(c);
+  else state.filters.categories = state.filters.categories.filter(x => x !== c);
+  saveState(); renderFeed();
+});
+document.getElementById("sourceFilters").addEventListener("change", e => {
+  const s = e.target.dataset.src; if (!s) return;
+  if (e.target.checked) state.filters.sources.push(s);
+  else state.filters.sources = state.filters.sources.filter(x => x !== s);
+  saveState(); renderFeed();
+});
+document.getElementById("dateFilters").addEventListener("change", e => {
+  state.filters.date = e.target.value; saveState(); renderFeed();
+});
+document.getElementById("resetFilters").addEventListener("click", () => {
+  state.filters = defaultState().filters;
+  if (window.__allSources) state.filters.sources = window.__allSources.slice();
+  saveState(); render();
+});
+document.getElementById("feed").addEventListener("click", e => {
+  const btn = e.target.closest("button[data-action]"); if (!btn) return;
+  const id = btn.closest(".card").dataset.id;
+  const action = btn.dataset.action;
+  if (action === "open") {
+    const it = DATA.items.find(x => x.id === id);
+    if (it) window.open(it.url, "_blank", "noopener");
+    return;
+  }
+  if (action === "take")   state.status[id] = "taken";
+  if (action === "reject") state.status[id] = "rejected";
+  if (action === "reset")  delete state.status[id];
+  saveState(); render();
+});
+
+loadFeeds();
+</script>
+
+</body>
+</html>
