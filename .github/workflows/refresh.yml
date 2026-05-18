@@ -1,0 +1,45 @@
+name: Daily refresh
+
+on:
+  # Cron in UTC. Nederlandse 08:30 zomertijd = 06:30 UTC, wintertijd = 07:30 UTC.
+  schedule:
+    - cron: '30 6 * * *'
+  # Handmatig starten kan altijd via Actions-tab → Run workflow
+  workflow_dispatch:
+
+permissions:
+  contents: write   # nodig om feeds.json terug te committen
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run fetch and score
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python fetch_and_score.py
+
+      - name: Commit feeds.json
+        run: |
+          git config user.name "PowNed Refresh Bot"
+          git config user.email "actions@github.com"
+          git add feeds.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-refresh feeds.json ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi
