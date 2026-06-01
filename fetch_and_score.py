@@ -17,6 +17,7 @@ import sys
 import time
 import unicodedata
 from datetime import datetime, timedelta, timezone
+from difflib import SequenceMatcher
 
 import feedparser
 import requests
@@ -57,6 +58,22 @@ FEEDS = [
     {"source": "Politie",            "url": "https://www.politie.nl/rss/nieuws/"},
     {"source": "Crimesite",          "url": "https://www.crimesite.nl/feed/"},
     {"source": "Regio 15 (Den Haag)","url": "https://regio15.nl/feed/"},
+    # --- Zuid-Holland regionaal (toegevoegd op feedbackronde) ---
+    {"source": "De Havenloods",      "url": "https://www.dehavenloods.nl/feed/"},
+    {"source": "Leidsch Dagblad",    "url": "https://www.leidschdagblad.nl/rss.xml"},
+    {"source": "Hart van Holland",   "url": "https://www.hartvanzuidplas.nl/feed/"},
+    {"source": "AD Den Haag",        "url": "https://www.ad.nl/den-haag/rss.xml"},
+    {"source": "AD Rotterdam",       "url": "https://www.ad.nl/rotterdam/rss.xml"},
+    {"source": "Briels Nieuwsland",  "url": "https://www.brielsnieuwsland.nl/feed/"},
+    {"source": "Dagblad010",         "url": "https://dagblad010.nl/feed/"},
+    {"source": "Delft op Zondag",    "url": "https://www.delftopzondag.nl/feed/"},
+    {"source": "Den Haag Centraal",  "url": "https://www.denhaagcentraal.net/feed/"},
+    {"source": "Dordt Centraal",     "url": "https://dordtcentraal.nl/feed/"},
+    {"source": "Het Kontakt",        "url": "https://www.hetkontakt.nl/feed/"},
+    {"source": "Kijk op Zuid-Holland","url": "https://www.kijkopzuid-holland.nl/feed/"},
+    {"source": "OPEN Rotterdam",     "url": "https://openrotterdam.nl/feed/"},
+    {"source": "RTV Dordrecht",      "url": "https://www.rtvdordrecht.nl/feed/"},
+    {"source": "Sleutelstad",        "url": "https://sleutelstad.nl/feed/"},
 ]
 
 # Paywall-bronnen waar links via archive.ph moeten
@@ -109,6 +126,45 @@ def parse_date(entry) -> datetime | None:
         if t:
             return datetime(*t[:6], tzinfo=timezone.utc)
     return None
+
+def normalize_title(t: str) -> str:
+    """Normaliseer titel voor similarity-vergelijking."""
+    t = unicodedata.normalize("NFKD", t or "").encode("ascii", "ignore").decode()
+    t = t.lower()
+    t = re.sub(r"[^a-z0-9\s]", " ", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    # Strip veelvoorkomende ruis-woorden die niet helpen bij dedup
+    for stop in [" nl", " nederland", " 2024", " 2025", " 2026", " video", " live"]:
+        t = t.replace(stop, " ")
+    return re.sub(r"\s+", " ", t).strip()
+
+def title_similarity(a: str, b: str) -> float:
+    return SequenceMatcher(None, normalize_title(a), normalize_title(b)).ratio()
+
+# Drempel: 0.78 = titels lijken sterk op elkaar (zelfde verhaal andere woordkeuze)
+# 0.85 = bijna identiek. 0.65 = thematisch verwant maar mogelijk ander verhaal.
+TITLE_SIM_THRESHOLD = 0.78
+
+def dedupe_by_title(items: list[dict]) -> tuple[list[dict], int]:
+    """Verwijder items met sterk lijkende titels. Houdt het eerste (op gesorteerde input).
+    Voegt 'duplicate_sources' toe aan bewaarde items zodat we tonen welke bronnen ook dit verhaal hadden."""
+    kept: list[dict] = []
+    dup_count = 0
+    for item in items:
+        is_dup = False
+        for k in kept:
+            if k["source"] == item["source"]:
+                continue  # zelfde bron met andere titel = geen dedup
+            if title_similarity(item["title"], k["title"]) >= TITLE_SIM_THRESHOLD:
+                is_dup = True
+                k.setdefault("duplicate_sources", [])
+                if item["source"] not in k["duplicate_sources"]:
+                    k["duplicate_sources"].append(item["source"])
+                dup_count += 1
+                break
+        if not is_dup:
+            kept.append(item)
+    return kept, dup_count
 
 def extract_image(entry) -> str:
     # Probeer in deze volgorde: media_thumbnail, media_content, enclosure
@@ -177,9 +233,24 @@ Lokaal nieuws kan sterk zijn — PowNed wil regionale verhalen vroeg spotten.
 Beoordeel ELK artikel hieronder:
 - score: 0-100
 - category: Politiek | Opmerkelijk | Media | Misdaad | Event | Overig
-- location: Landelijk | Amsterdam | Rotterdam | Den Haag | Utrecht | Brabant | Limburg |
-            Gelderland | Overijssel | Friesland | Groningen | Zeeland | Noord-Holland |
-            Flevoland | Internationaal
+- location: kies UITSLUITEND uit deze 14 opties (provincies + Landelijk + Internationaal):
+            Landelijk | Drenthe | Flevoland | Friesland | Gelderland | Groningen |
+            Limburg | Noord-Brabant | Noord-Holland | Overijssel | Utrecht | Zeeland |
+            Zuid-Holland | Internationaal
+  Stad → provincie mapping (gebruik dit consistent):
+    Amsterdam, Haarlem, Alkmaar, Hilversum → Noord-Holland
+    Rotterdam, Den Haag, Leiden, Delft, Dordrecht, Gouda, Schiedam, Zoetermeer → Zuid-Holland
+    Utrecht (stad), Amersfoort, Nieuwegein → Utrecht (provincie)
+    Eindhoven, Tilburg, Breda, Den Bosch, Helmond → Noord-Brabant
+    Groningen (stad), Veendam → Groningen
+    Maastricht, Heerlen, Roermond, Venlo → Limburg
+    Arnhem, Nijmegen, Apeldoorn, Ede → Gelderland
+    Zwolle, Enschede, Hengelo, Deventer → Overijssel
+    Leeuwarden, Drachten, Sneek → Friesland
+    Middelburg, Vlissingen, Goes → Zeeland
+    Almere, Lelystad → Flevoland
+    Assen, Emmen, Hoogeveen → Drenthe
+  Alleen 'Landelijk' als het geen specifieke provincie betreft. 'Internationaal' alleen voor buitenland.
 - reason: één korte zin (max 18 woorden), waarom (niet) relevant
 - summary: 2 zinnen, neutraal-feitelijk
 
@@ -237,15 +308,20 @@ def main():
             all_items.extend(items)
 
     # === STAP 2: dedupe + sort ===
+    # Eerst URL-dedup (exact match), daarna titel-similarity-dedup (zelfde verhaal van andere bron).
     seen_urls = set()
-    unique = []
+    url_unique = []
     for it in sorted(all_items, key=lambda x: x["pubDate"], reverse=True):
         if it["url"] in seen_urls:
             continue
         seen_urls.add(it["url"])
-        unique.append(it)
+        url_unique.append(it)
+    print(f"\nNa URL-dedupe: {len(url_unique)} items.")
+
+    unique, dup_by_title = dedupe_by_title(url_unique)
+    print(f"Na titel-dedupe: {len(unique)} items ({dup_by_title} duplicaten samengevoegd).")
+
     unique = unique[:MAX_ITEMS_TO_SCORE]
-    print(f"\nNa dedupe: {len(unique)} unieke items te scoren.")
 
     # === STAP 3: scoring via Claude ===
     if not unique:
