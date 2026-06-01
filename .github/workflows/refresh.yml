@@ -1,14 +1,12 @@
 name: Daily refresh
 
 on:
-  # Cron in UTC. Nederlandse 08:30 zomertijd = 06:30 UTC, wintertijd = 07:30 UTC.
   schedule:
     - cron: '30 6 * * *'
-  # Handmatig starten kan altijd via Actions-tab → Run workflow
   workflow_dispatch:
 
 permissions:
-  contents: write   # nodig om feeds.json terug te committen
+  contents: write
 
 jobs:
   refresh:
@@ -38,8 +36,18 @@ jobs:
           git config user.email "actions@github.com"
           git add feeds.json
           if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "Auto-refresh feeds.json ($(date -u +%Y-%m-%dT%H:%MZ))"
-            git push
+            echo "Geen wijzigingen om te committen."
+            exit 0
           fi
+          git commit -m "Auto-refresh feeds.json ($(date -u +%Y-%m-%dT%H:%MZ))"
+          # Pull-rebase + push met retry voor race-conditions
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              echo "Push gelukt op poging $i"
+              exit 0
+            fi
+            echo "Push faalde op poging $i — even wachten en opnieuw"
+            sleep $((i * 5))
+          done
+          echo "Push faalde na 3 pogingen"
+          exit 1  
