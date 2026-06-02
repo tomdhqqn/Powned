@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-02T07:43:00.825547+00:00",
+  "generatedAt": "2026-06-02T08:12:22.012611+00:00",
   "stats": {
     "feeds_total": 43,
     "feeds_succeeded": 27,
     "feeds_failed": 16,
-    "items_collected": 654,
+    "items_collected": 658,
     "items_after_dedupe": 60,
     "items_scored": 60,
-    "items_high_score": 5
+    "items_high_score": 7
   },
   "fetchedFeeds": [
     {
@@ -33,7 +33,7 @@
     {
       "source": "NU.nl",
       "url": "https://www.nu.nl/rss/algemeen",
-      "count": 29
+      "count": 30
     },
     {
       "source": "Telegraaf",
@@ -93,7 +93,7 @@
     {
       "source": "RTV Noord",
       "url": "https://www.rtvnoord.nl/rss",
-      "count": 35
+      "count": 34
     },
     {
       "source": "Crimesite",
@@ -118,7 +118,7 @@
     {
       "source": "Dagblad010",
       "url": "https://dagblad010.nl/feed/",
-      "count": 56
+      "count": 59
     },
     {
       "source": "Den Haag Centraal",
@@ -138,7 +138,7 @@
     {
       "source": "OPEN Rotterdam",
       "url": "https://openrotterdam.nl/feed/",
-      "count": 6
+      "count": 7
     },
     {
       "source": "Sleutelstad",
@@ -230,63 +230,136 @@
   ],
   "items": [
     {
-      "id": "dagblad010-8471686629",
+      "id": "dagblad010-4918792320",
+      "source": "Dagblad010",
+      "title": "Rijkswaterstaat waarschuwt voor gevaarlijke situaties en files",
+      "description": "Rijkswaterstaat waarschuwt voor gevaarlijke situaties en files",
+      "url": "https://dagblad010.nl/landelijk/rijkswaterstaat-waarschuwt-voor-gevaarlijke-situaties-en-files",
+      "pubDate": "2026-06-02T09:52:00+00:00",
+      "image": "https://media.digitaaldagblad.nl/files/shares/dagblad070/file6a0eca13c526a.jpg",
+      "duplicate_sources": [
+        "Gooi- en Eemlander"
+      ],
+      "score": 15,
+      "category": "Overig",
+      "location": "Landelijk",
+      "reason": "Routinematige verkeersinfo zonder nieuwswaarde of controverse.",
+      "summary": "Rijkswaterstaat waarschuwt voor gevaarlijke verkeerssituaties en files op Nederlandse wegen. Bericht bevat geen bijzondere incidenten of ontwikkelingen."
+    },
+    {
+      "id": "dagblad010-6317307693",
+      "source": "Dagblad010",
+      "title": "Vertrouwen in kabinet-Jetten gekelderd; nog maar 22 procent",
+      "description": "Vertrouwen in kabinet-Jetten gekelderd; nog maar 22 procent",
+      "url": "https://dagblad010.nl/landelijk/vertrouwen-in-kabinet-jetten-gekelderd-nog-maar-22-procent",
+      "pubDate": "2026-06-02T09:46:00+00:00",
+      "image": "https://media.digitaaldagblad.nl/files/shares/dagblad070/premierjetten69dd065bd0673.jpg",
+      "score": 82,
+      "category": "Politiek",
+      "location": "Landelijk",
+      "reason": "Sterke politieke stof over vertrouwen in zittend kabinet; kernthema voor PowNed.",
+      "summary": "Het vertrouwen in het kabinet-Jetten is drastisch gezakt naar slechts 22 procent volgens onderzoek. Dit weerspiegelt groeiende onvrede onder de Nederlandse bevolking over het huidige beleid."
+    },
+    {
+      "id": "dagblad010-2990870254",
+      "source": "Dagblad010",
+      "title": "Diergaarde Blijdorp laat stokstaartjes inslapen om spanningen",
+      "description": "Diergaarde Blijdorp laat stokstaartjes inslapen om spanningen",
+      "url": "https://dagblad010.nl/rotterdam%20%26%20regio/diergaarde-blijdorp-laat-stokstaartjes-inslapen-om-spanningen",
+      "pubDate": "2026-06-02T09:39:00+00:00",
+      "image": "https://media.digitaaldagblad.nl/files/shares/dagblad010/stkstaartjes6a1e8889049f0.jpg",
+      "score": 58,
+      "category": "Opmerkelijk",
+      "location": "Zuid-Holland",
+      "reason": "Controversieel dierenethiek-verhaal met satirisch potentieel; locale angle Rotterdam.",
+      "summary": "Diergaarde Blijdorp in Rotterdam laat stokstaartjes inslapen vanwege onderlinge spanningen in de groep. Beslissing roept vragen op over dierenwelzijn en management."
+    },
+    {
+      "id": "dagblad010-225234007",
+      "source": "Dagblad010",
+      "title": "Schoolreisjes onder druk door geldtekort",
+      "description": "Schoolreisjes onder druk door geldtekort",
+      "url": "https://dagblad010.nl/landelijk/schoolreisjes-onder-druk-door-geldtekort",
+      "pubDate": "2026-06-02T09:35:00+00:00",
+      "image": "https://media.digitaaldagblad.nl/files/shares/dagblad070/efteling5cb33316d34fc.jpg",
+      "score": 45,
+      "category": "Overig",
+      "location": "Landelijk",
+      "reason": "Educatief thema met maatschappelijk belang, maar geen scoop of controverse.",
+      "summary": "Schoolreisjes komen onder druk te staan vanwege geldtekort bij scholen. Veel scholen moeten activiteiten annuleren of uitstellen."
+    },
+    {
+      "id": "dagblad010-1940241263",
+      "source": "Dagblad010",
+      "title": "Rijk wil in twaalf zaken nog coronamiljoenen terugzien",
+      "description": "Rijk wil in twaalf zaken nog coronamiljoenen terugzien",
+      "url": "https://dagblad010.nl/landelijk/rijk-wil-in-twaalf-zaken-nog-coronamiljoenen-terugzien",
+      "pubDate": "2026-06-02T09:33:00+00:00",
+      "image": "https://media.digitaaldagblad.nl/files/shares/goudsdagblad/mondkapjes_corona61ae449f2a46c.jpg",
+      "score": 72,
+      "category": "Politiek",
+      "location": "Landelijk",
+      "reason": "Coronamiljoenen-terugvordering is PowNed-relevant; toont coronahandelen-kritiek.",
+      "summary": "Het Rijk wil in twaalf zaken coronamiljoenen terugzien die mogelijk onterecht zijn uitgekeerd. Dit onderdeel van breder onderzoek naar coronasteun-misstanden."
+    },
+    {
+      "id": "dagblad010-4408068622",
       "source": "Dagblad010",
       "title": "Jaren wachten op huisstroom",
       "description": "Jaren wachten op huisstroom",
       "url": "https://dagblad010.nl/landelijk/jaren-wachten-op-huisstroom",
       "pubDate": "2026-06-02T09:31:00+00:00",
       "image": "https://media.digitaaldagblad.nl/files/shares/dagblad070/warmtepomp67d033107f80b.jpg",
-      "score": 15,
+      "score": 30,
       "category": "Overig",
       "location": "Landelijk",
-      "reason": "Routineus infrastructuurnieuws zonder controversiële of politieke dimensie.",
-      "summary": "Huishoudens in bepaalde gebieden ervaren langdurige wachtlijsten voor stroomaansluitingen. Het artikel behandelt de uitdagingen in de elektriciteitsinfrastructuur."
+      "reason": "Bureaucratisch infrastructuurprobleem zonder politische controverse of urgentie.",
+      "summary": "Burgers moeten jaren wachten op aansluiting van huisstroom vanwege knelpunten bij netbeheerders. Systeemstoringen belemmeren energietransitie."
     },
     {
-      "id": "dagblad010-6265345500",
+      "id": "dagblad010-8285688454",
       "source": "Dagblad010",
       "title": "Rotterdamse winkels verkopen massaal illegale snus",
       "description": "Rotterdamse winkels verkopen massaal illegale snus",
       "url": "https://dagblad010.nl/rotterdam%20%26%20regio/rotterdamse-winkels-verkopen-massaal-illegale-snus",
       "pubDate": "2026-06-02T09:30:00+00:00",
       "image": "https://media.digitaaldagblad.nl/files/shares/dagblad070/snus6a1e868375dc6.jpg",
-      "score": 72,
+      "score": 68,
       "category": "Misdaad",
       "location": "Zuid-Holland",
-      "reason": "Illegale drugshandel in winkelomgeving; regionale misdaadstory met maatschappelijk belang.",
-      "summary": "Winkels in Rotterdam verkopen op grote schaal illegale snus, een nicotineproduct dat in Nederland verboden is. Dit duidt op gefaalde handhaving in de detailhandel."
+      "reason": "Illegale producten en winkels; handhaving/overtredingen; Rotterdam-angle sterk.",
+      "summary": "Winkels in Rotterdam verkopen op grote schaal illegale snus, ondanks handhavingspogingen. Probleem wijst op gaten in toezicht en regelgeving."
     },
     {
-      "id": "dagblad010-4353501340",
+      "id": "dagblad010-6147141473",
       "source": "Dagblad010",
       "title": "NOC*NSF uit zorgen over bezuinigingen in brief aan sportminister",
       "description": "NOC*NSF uit zorgen over bezuinigingen in brief aan sportminister",
       "url": "https://dagblad010.nl/landelijk/nocnsf-uit-zorgen-over-bezuinigingen-in-brief-aan-sportminister",
       "pubDate": "2026-06-02T09:25:00+00:00",
       "image": "https://media.digitaaldagblad.nl/files/shares/dagblad070/nocnsf6a1e85663d9d7.jpg",
-      "score": 65,
+      "score": 50,
       "category": "Politiek",
       "location": "Landelijk",
-      "reason": "Kabinetsbeleid en bezuinigingen betreffende sportbeweging; relevante beleidskritiek.",
-      "summary": "De Nederlandse sportkoepel NOC*NSF waarschuwt de sportminister in een brief over geplande bezuinigingen. Dit raakt het kabinetsbeleid rond sportkrediet."
+      "reason": "Sportbezuinigingen-kritiek relevant; echter minder scherp dan kernpolitieke conflicten.",
+      "summary": "NOC*NSF waarschuwt sportminister over gevolgen van geplande bezuinigingen op sport. Organisatie vreest voor toekomstige sportinfrastructuur en talententwickeling."
     },
     {
-      "id": "dagblad010-4413506280",
+      "id": "dagblad010-5059956043",
       "source": "Dagblad010",
       "title": "Mensen gaan minder vaak uit eten in restaurants",
       "description": "Mensen gaan minder vaak uit eten in restaurants",
       "url": "https://dagblad010.nl/landelijk/mensen-gaan-minder-vaak-uit-eten-in-restaurants",
       "pubDate": "2026-06-02T09:22:00+00:00",
       "image": "https://media.digitaaldagblad.nl/files/shares/dagblad010/diner66a120907d8d3.jpg",
-      "score": 25,
+      "score": 15,
       "category": "Overig",
       "location": "Landelijk",
-      "reason": "Routineus economisch-consumentennieuws zonder schandaal, controverse of politiek belang.",
-      "summary": "Consumentenbestedingen aan restaurantbezoeken nemen af in Nederland. De trend weerspiegelt veranderde uitgavenstijlen onder Nederlanders."
+      "reason": "Routineus consumentengedrag zonder politieke of maatschappelijke scherping.",
+      "summary": "Onderzoek toont aan dat Nederlanders minder vaak in restaurants eten. Trend hangt samen met economische omstandigheden."
     },
     {
-      "id": "dagblad010-82948001",
+      "id": "dagblad010-1993721922",
       "source": "Dagblad010",
       "title": "Kabinet wil arbeidsmigrant beter beschermen tegen onderbetaling",
       "description": "Kabinet wil arbeidsmigrant beter beschermen tegen onderbetaling",
@@ -299,11 +372,11 @@
       "score": 68,
       "category": "Politiek",
       "location": "Landelijk",
-      "reason": "Kabinetsinitiatief op arbeidsmarkt; relevant beleid met potentieel controversiële dimensie.",
-      "summary": "Het kabinet kondigt maatregelen aan om arbeidsmigranten beter te beschermen tegen onderbetaling. Dit is onderdeel van breder arbeidsmarktbeleid."
+      "reason": "Kabinetsmaatregel tegen onderbetaling raakt arbeidsmigratie en sociaal beleid.",
+      "summary": "Het kabinet kondigt maatregelen aan om arbeidsmigranten beter te beschermen tegen onderbetaling. Nieuw beleid moet uitbuiting voorkomen."
     },
     {
-      "id": "dagblad010-6276347567",
+      "id": "dagblad010-3040939197",
       "source": "Dagblad010",
       "title": "Meer gemeenten hebben lokaal hitteplan, meerderheid nog niet",
       "description": "Meer gemeenten hebben lokaal hitteplan, meerderheid nog niet",
@@ -313,14 +386,14 @@
       "duplicate_sources": [
         "Gooi- en Eemlander"
       ],
-      "score": 35,
+      "score": 45,
       "category": "Overig",
       "location": "Landelijk",
-      "reason": "Routineus klimaatbeleid zonder controverse; marginaal politiek interesse.",
-      "summary": "Meer Nederlandse gemeenten hebben een hitteplan aangenomen, maar nog steeds niet de meerderheid. Het benadrukt kloof in voorbereiding op klimaatrisico's."
+      "reason": "Lokale hitteplannen relevantie beperkt; geen scherpe maatschappelijke controverse.",
+      "summary": "Steeds meer gemeenten implementeren lokale hitteplannen, maar nog altijd is de meerderheid niet voorzien. Klimaatadaptatie loopt versneld."
     },
     {
-      "id": "dagblad010-5815259972",
+      "id": "dagblad010-2846376244",
       "source": "Dagblad010",
       "title": "Jongerenbank BUUT laat tieners onder 16 als eerste mobiel betalen",
       "description": "Jongerenbank BUUT laat tieners onder 16 als eerste mobiel betalen",
@@ -330,14 +403,14 @@
       "duplicate_sources": [
         "Gooi- en Eemlander"
       ],
-      "score": 48,
-      "category": "Opmerkelijk",
+      "score": 35,
+      "category": "Overig",
       "location": "Landelijk",
-      "reason": "Jeugdfintech met potentiële maatschappelijke/opvoedingsrelevantie; wat controversieel.",
-      "summary": "Jongerenbank BUUT laat kinderen onder 16 jaar als eerste in Nederland via mobiel betalen. Dit roept vragen op over gezag en financiële mondheid van minderjarigen."
+      "reason": "Bankproduct voor jongeren interessant maar geen maatschappelijke controverse.",
+      "summary": "Jongerenbank BUUT stelt tieners onder 16 in staat mobiel te betalen. Bank positioneert zich als innovator op jongeren-markt."
     },
     {
-      "id": "dagblad010-281269598",
+      "id": "dagblad010-4784800700",
       "source": "Dagblad010",
       "title": "Van den Brink tevreden met EU-akkoord over terugkeerhubs asielzoekers",
       "description": "Van den Brink tevreden met EU-akkoord over terugkeerhubs asielzoekers",
@@ -347,14 +420,14 @@
       "duplicate_sources": [
         "Gooi- en Eemlander"
       ],
-      "score": 62,
+      "score": 72,
       "category": "Politiek",
-      "location": "Landelijk",
-      "reason": "EU-asielbeleid met Nederlandse kabinetsmening; relevant voor immigratiedebat.",
-      "summary": "Asielminister Van den Brink spreekt tevredenheid uit over een EU-akkoord over terugkeerhubs voor asielzoekers. Het versterkt Haagse lijn op migratiebeleid."
+      "location": "Internationaal",
+      "reason": "Asielbeleid en terugkeerhubs raken PVV-prioriteiten en Den Haag-debatten direct.",
+      "summary": "Staatssecretaris Van den Brink verklaart zich tevreden over EU-akkoord inzake terugkeerhubs voor asielzoekers. Maatregel past in regeringsbeleid."
     },
     {
-      "id": "dagblad010-5981465400",
+      "id": "dagblad010-4685971489",
       "source": "Dagblad010",
       "title": "Politie: agent wist bij aanhouding niet dat vrouw zwanger was",
       "description": "Politie: agent wist bij aanhouding niet dat vrouw zwanger was",
@@ -364,140 +437,358 @@
       "duplicate_sources": [
         "Gooi- en Eemlander"
       ],
-      "score": 62,
+      "score": 58,
       "category": "Misdaad",
       "location": "Landelijk",
-      "reason": "Politie-incident met potentieel schandaal; zwakke details maken vooralsnog matig relevant.",
-      "summary": "Een politieagent hield een zwangere vrouw aan zonder daarvan op de hoogte te zijn. De politie stelt dat de agent dit niet wist op moment van aanhouding."
+      "reason": "Politie-incident met zwangere vrouw raakt kritiek op politieoptreden.",
+      "summary": "Politie stelt dat agenten niet wisten dat aangehouden vrouw zwanger was. Incident roept vragen op over operationele informatie."
     },
     {
-      "id": "trouw-7014619626",
+      "id": "open-rotterdam-7826043371",
+      "source": "OPEN Rotterdam",
+      "title": "Uit de hand gelopen grap: tweehonderd snorren verzamelen zich in Station Bergweg",
+      "description": "Tweehonderd mannen met een snor bij elkaar: vrijdag was dat het opvallende beeld op het dakterras van Station Bergweg. Het was de eerste borrel van Project Snor. Een groepsapp met zo’n 1500 snordragers. Voor het event kwamen mensen uit heel Nederland naar Rotterdam. Wat begon als een grap onder vrienden, liep uit de hand tot [&#8230;] Het bericht Uit de hand gelopen grap: tweehonderd snorren verza",
+      "url": "https://openrotterdam.nl/uit-de-hand-gelopen-grap-tweehonderd-snorren-verzamelen-zich-in-station-bergweg-2/",
+      "pubDate": "2026-06-02T08:10:16+00:00",
+      "image": "",
+      "score": 52,
+      "category": "Event",
+      "location": "Zuid-Holland",
+      "reason": "Opvallende lokale samenkomst in Rotterdam; bizarre mas-gathering relevant voor PowNed.",
+      "summary": "Bijna tweehonderd snordragers verzamelden zich voor eerste borrel van Project Snor op Station Bergweg. Event trok deelnemers uit heel Nederland."
+    },
+    {
+      "id": "telegraaf-329566769",
+      "source": "Telegraaf",
+      "title": "Hoe groot is de kans dat broers Brian Brobbey en Derrick Luckassen elkaar treffen op het WK?",
+      "description": "Derrick Luckassen is in extremis opgeroepen bij Ghana voor het WK. De 30-jarige verdediger kan deze zomer dus een interland spelen tegen zijn broer Brian Brobbey, die door Ronald Koeman is opgenomen in de 26-koppige selectie van het Nederlands elftal.",
+      "url": "https://www.telegraaf.nl/sport/voetbal/hoe-groot-is-de-kans-dat-broers-brian-brobbey-en-derrick-luckassen-elkaar-treffen-op-het-wk/154755748.html",
+      "pubDate": "2026-06-02T08:06:09+00:00",
+      "image": "https://prod-img.telegraaf.nl/public/sport/2jb4ie-luckassen-brobbey.jpg/alternates/BASE_SIXTEEN_NINE/Luckassen%20Brobbey.jpg",
+      "score": 8,
+      "category": "Overig",
+      "location": "Internationaal",
+      "reason": "Voetbal-curiositeit zonder maatschappelijke relevantie voor PowNed-lezers.",
+      "summary": "Brian Brobbey en zijn broer Derrick Luckassen kunnen elkaar tegenkomen op het WK. Bijzondere familiesituatie in voetbalcontext."
+    },
+    {
+      "id": "omroep-brabant-5196097422",
+      "source": "Omroep Brabant",
+      "title": "Nederlands Film Festival opent met film van Eindhovenaar: 'Enorm trots'",
+      "description": "Het Nederlands Film Festival trapt dit jaar af met een vertoning van de nieuwe film Downtown, van regisseur Michiel van Erp uit Eindhoven. Van Erp maakte eerder furore met documentaires over onder meer rampvlucht MH17, fotograaf Erwin Olaf en de film Een Schitterend Gebrek. De 46ste editie van het Nederlands Film Festival gaat op 25 september van start en pakt uit met een brede waaier aan films va",
+      "url": "https://www.omroepbrabant.nl/nieuws/6011479/nederlands-film-festival-opent-met-film-van-eindhovenaar-enorm-trots",
+      "pubDate": "2026-06-02T08:03:00+00:00",
+      "image": "https://api.omroepbrabant.nl/img/f/1280/720/0.50/0.50/cmV2aXNpb25zLzQ5MDk2NDAtMS5qcGc_c2U9MjA0NS0wMS0wMVQxMCUzQTQwJTNBMDBaJnNpZz02WU5wYThQVyUyQlRrcng5aURNNnVCaFd5dnVmQnIxdnZWY0tSUjVndUZKdFklM0Qmc3A9ciZzcHI9aHR0cHMmc3I9YiZzdD0yMDI1LTAxLTAxVDEwJTNBNDAlM0EwMFomc3Y9MjAyNi0wMi0wNg==",
+      "score": 35,
+      "category": "Overig",
+      "location": "Noord-Brabant",
+      "reason": "Cultuurnieuws zonder controversie, schandaal of politieke lading relevant voor PowNed.",
+      "summary": "Het Nederlands Film Festival opent op 25 september met de film Downtown van Eindhovenaar Michiel van Erp. Van Erp is bekend van documentaires over onder meer MH17 en fotografe Erwin Olaf."
+    },
+    {
+      "id": "telegraaf-180989176",
+      "source": "Telegraaf",
+      "title": "Rijkswaterstaat waarschuwt voor gevaarlijke situaties en lange files door zware buien tijdens avondspits",
+      "description": "Rijkswaterstaat waarschuwt weggebruikers om tijdens de avondspits alert te zijn op gevaarlijke situaties en mogelijk lange files door de verwachte slechte weersomstandigheden. Het KNMI heeft voor dinsdag code geel voor vrijwel het hele land uitgeroepen.",
+      "url": "https://www.telegraaf.nl/binnenland/rijkswaterstaat-waarschuwt-voor-gevaarlijke-situaties-en-lange-files-door-zware-buien-tijdens-avondspits/154760454.html",
+      "pubDate": "2026-06-02T08:00:35+00:00",
+      "image": "https://prod-img.telegraaf.nl/public/incoming/tvuocs-file85smwfgn1hig2xedmt2/alternates/BASE_SIXTEEN_NINE/file85smwfgn1hig2xedmt2",
+      "score": 5,
+      "category": "Overig",
+      "location": "Landelijk",
+      "reason": "Routinematig weernieuws zonder opmerking of controverse; niet PowNed-relevant.",
+      "summary": "Rijkswaterstaat waarschuwt weggebruikers om tijdens de avondspits alert te zijn op gevaarlijke situaties en mogelijk lange files door de verwachte slechte weersomstandigheden. Het KNMI heeft voor dins"
+    },
+    {
+      "id": "ad-den-haag-6671231629",
+      "source": "AD Den Haag",
+      "title": "Tennisicoon Marcella Mesker maakt zich hard voor haar sport: ‘De beleving dichter bij het publiek brengen’",
+      "description": "Voormalig prof Marcella Mesker doet al sinds 1987 commentaar bij tenniswedstrijden op televisie en radio. Dat ze nog steeds hart voor de sport heeft, blijkt wel uit het feit dat ze een pilot is gestart tijdens de eredivisie gemengd, die volgens Mesker meer aandacht verdient.",
+      "url": "https://www.ad.nl/den-haag/tennisicoon-marcella-mesker-maakt-zich-hard-voor-haar-sport-de-beleving-dichter-bij-het-publiek-brengen~a03649d5/",
+      "pubDate": "2026-06-02T08:00:31+00:00",
+      "image": "https://images.ad.nl/M2I1Yzc2MTkzOGE5ZDQwMzZiZjkvZGlvLzI3NDIzMjQwNi9maXQtd2lkdGgvNDAw/ar20260529-0185-den-haag-30-05-2026-tennis-gemengd-eredivisie-marcella-mesker-interviewt-de-kopman-van-hltc-leimonias-javier-barranco-cosano",
+      "score": 15,
+      "category": "Overig",
+      "location": "Zuid-Holland",
+      "reason": "Sportpersonalia zonder schandaal, controverse of maatschappelijk belang voor PowNed.",
+      "summary": "Voormalig prof Marcella Mesker doet al sinds 1987 commentaar bij tenniswedstrijden op televisie en radio. Dat ze nog steeds hart voor de sport heeft, blijkt wel uit het feit dat ze een pilot is gestar"
+    },
+    {
+      "id": "nu.nl-4117495533",
+      "source": "NU.nl",
+      "title": "Politie onderzoekt brand restaurant Wijdenes waar racistische teksten stonden",
+      "description": "In het Noord-Hollandse Wijdenes heeft een zeer grote brand gewoed in een restaurant. Op het pand waren volgens de politie \"verontrustende leuzen\" aangebracht. De politie doet onderzoek naar brandstichting. Op beelden van lokale media is te zien dat het gaat om racistische teksten.",
+      "url": "https://www.nu.nl/binnenland/6397890/politie-onderzoekt-brand-restaurant-wijdenes-waar-racistische-teksten-stonden.html",
+      "pubDate": "2026-06-02T08:00:14+00:00",
+      "image": "https://images.nu.nl/m/qirxfm0akf48_sqr256/172/0/1413/1413/politie-onderzoekt-brand-restaurant-wijdenes-waar-racistische-teksten-stonden.jpg",
+      "score": 78,
+      "category": "Misdaad",
+      "location": "Noord-Holland",
+      "reason": "Brandstichting en racistische leuzen treffen restaurant; onderzoek gaande, maatschappelijk opvallend.",
+      "summary": "In het Noord-Hollandse Wijdenes heeft een zeer grote brand gewoed in een restaurant. Op het pand waren volgens de politie \"verontrustende leuzen\" aangebracht. De politie doet onderzoek naar brandstich"
+    },
+    {
+      "id": "telegraaf-2401544847",
+      "source": "Telegraaf",
+      "title": "Valkhof Museum bespot als ’zwembad’ maar dat deert architect niet: ’Emoties horen erbij, boos of enthousiast’",
+      "description": "Sinds de opening in 1999 is het Valkhof Museum in Nijmegen onderwerp van felle discussies. Architectuurliefhebbers prijzen het als modern en gewaagd, in de volksmond wordt het bespot als ’aquarium’ of ’zwembad’. Koningin Máxima heropent het veelbesproken gebouw komende donderdag 4 juni na een miljoenenrenovatie. Een tweede kans voor een van meet af aan controversieel project in de oudste stad van ",
+      "url": "https://www.telegraaf.nl/binnenland/valkhof-museum-bespot-als-zwembad-maar-dat-deert-architect-niet-emoties-horen-erbij-boos-of-enthousiast/152011001.html",
+      "pubDate": "2026-06-02T08:00:00+00:00",
+      "image": "https://prod-img.telegraaf.nl/public/incoming/d0mhhu-valkhof-museum/alternates/BASE_SIXTEEN_NINE/Valkhof%20Museum",
+      "score": 62,
+      "category": "Opmerkelijk",
+      "location": "Gelderland",
+      "reason": "Controversieel architectuurproject met publieke discussie en koningin-heropening; opiniewaarde.",
+      "summary": "Sinds de opening in 1999 is het Valkhof Museum in Nijmegen onderwerp van felle discussies. Architectuurliefhebbers prijzen het als modern en gewaagd, in de volksmond wordt het bespot als ’aquarium’ of"
+    },
+    {
+      "id": "ad-337571355",
+      "source": "AD",
+      "title": "Rosalie (26) vereeuwigt Oranje ‘in bizar korte tijd’ op enorme muur in WK-speelstad, maar heeft het resultaat zelf nog niet gezien",
+      "description": "Rosalie de Graaf is net terug uit Amerika. De kunstenaar uit Doesburg heeft in Dallas een gigantische muurschildering van 3375 vierkante meter gemaakt, met een glansrol voor het WK voetbal en Nederland. „Ik ben helemaal gesloopt. Ik heb zelfs het eindresultaat nog niet gezien.”",
+      "url": "https://www.ad.nl/binnenland/rosalie-26-vereeuwigt-oranje-in-bizar-korte-tijd-op-enorme-muur-in-wk-speelstad-maar-heeft-het-resultaat-zelf-nog-niet-gezien~a45b9473/",
+      "pubDate": "2026-06-02T08:00:00+00:00",
+      "image": "https://images.ad.nl/OWIwYjFlODRiZTllYTQ0YmRjZTEvZGlvLzI3NDI4NTIwNC9maXQtd2lkdGgvNDAw/roos-gif",
+      "duplicate_sources": [
+        "BN De Stem",
+        "PZC"
+      ],
+      "score": 48,
+      "category": "Opmerkelijk",
+      "location": "Gelderland",
+      "reason": "Kunstenaar uit Doesburg maakt gigantische muurschildering; bijzonder maar geen controverse.",
+      "summary": "Rosalie de Graaf is net terug uit Amerika. De kunstenaar uit Doesburg heeft in Dallas een gigantische muurschildering van 3375 vierkante meter gemaakt, met een glansrol voor het WK voetbal en Nederlan"
+    },
+    {
+      "id": "bn-de-stem-2461676001",
+      "source": "BN De Stem",
+      "title": "Wat Eten We Vandaag: Gebakken rijst met spitskool en tofu",
+      "description": "Met gebakken rijst zit je eigenlijk altijd wel... euh... gebakken! Deze vega versie maak je met tofu en een flinke portie spitskool.",
+      "url": "https://www.bndestem.nl/koken-en-eten/wat-eten-we-vandaag-gebakken-rijst-met-spitskool-en-tofu~a3362b3e/",
+      "pubDate": "2026-06-02T08:00:00+00:00",
+      "image": "https://images.bndestem.nl/M2QyZTlkMGUzNTRmMjFmOTM2NWEvZGlvLzI3NDExNTc0Ni9maXQtd2lkdGgvNDAw/e",
+      "duplicate_sources": [
+        "De Stentor",
+        "PZC"
+      ],
+      "score": 0,
+      "category": "Overig",
+      "location": "Noord-Brabant",
+      "reason": "Recept; volledig irrelevant voor PowNed-lezersbestand en redactioneel profiel.",
+      "summary": "Met gebakken rijst zit je eigenlijk altijd wel... euh... gebakken! Deze vega versie maak je met tofu en een flinke portie spitskool."
+    },
+    {
+      "id": "omroep-brabant-150779434",
+      "source": "Omroep Brabant",
+      "title": "Ongeneeslijk zieke Claudia wil naar de top: ‘Positiviteit zit in mijn DNA’",
+      "description": "Met uitgezaaide baarmoederhalskanker lijkt de top soms ver weg. Toch staat Claudia van Dongen (58) uit Prinsenbeek donderdag oog in oog met de mythische Franse berg tijdens Alpe d&rsquo;HuZes, om zoveel mogelijk geld in te zamelen voor onderzoek naar kanker. &ldquo;Positiviteit zit in mijn DNA.&rdquo; Claudia kreeg vorig jaar horen dat ze ongeneeslijk ziek is. &ldquo;Onwerkelijk en verschrikkelijk",
+      "url": "https://www.omroepbrabant.nl/nieuws/6008880/ongeneeslijk-zieke-claudia-wil-naar-de-top-positiviteit-zit-in-mijn-dna",
+      "pubDate": "2026-06-02T08:00:00+00:00",
+      "image": "https://api.omroepbrabant.nl/img/f/1280/720/0.50/0.50/cmV2aXNpb25zLzQ4OTg2MzEtMS5qcGc_c2U9MjA0NS0wMS0wMVQxMCUzQTQwJTNBMDBaJnNpZz1HenFxUmo5cEJoVDFLYm1XcFZrNGhoZ1Blb3J1MU9CZlk3OSUyQk10RiUyQklEdyUzRCZzcD1yJnNwcj1odHRwcyZzcj1iJnN0PTIwMjUtMDEtMDFUMTAlM0E0MCUzQTAwWiZzdj0yMDI2LTAyLTA2",
+      "score": 25,
+      "category": "Overig",
+      "location": "Noord-Brabant",
+      "reason": "Menselijk interessant verhaal maar zonder politieke, maatschappelijke of controversiële hoek.",
+      "summary": "Met uitgezaaide baarmoederhalskanker lijkt de top soms ver weg. Toch staat Claudia van Dongen (58) uit Prinsenbeek donderdag oog in oog met de mythische Franse berg tijdens Alpe d&rsquo;HuZes, om zove"
+    },
+    {
+      "id": "nu.nl-1610974568",
+      "source": "NU.nl",
+      "title": "Zo laat trekken de onweersbuien (ongeveer) over jouw locatie",
+      "description": "In alle provincies behalve Zeeland is dinsdag sprake van code geel vanwege onweersbuien. Het KNMI waarschuwt voor blikseminslagen, windstoten en zware regen. Bekijk op de kaarten hieronder hoe laat het onweer over jouw locatie heen trekt.",
+      "url": "https://www.nu.nl/binnenland/6397889/zo-laat-trekken-de-onweersbuien-ongeveer-over-jouw-locatie.html",
+      "pubDate": "2026-06-02T07:57:40+00:00",
+      "image": "https://images.nu.nl/m/65hxfw5avojy_sqr256/210/0/502/502/zo-laat-trekken-de-onweersbuien-ongeveer-over-jouw-locatie.jpg",
+      "score": 5,
+      "category": "Overig",
+      "location": "Landelijk",
+      "reason": "Routinematig weersbericht zonder controversieel of politiek element.",
+      "summary": "Het KNMI waarschuwt voor code geel in bijna alle provincies vanwege onweersbuien. Blikseminslagen, windstoten en zware regen worden verwacht."
+    },
+    {
+      "id": "nos-3745076307",
+      "source": "NOS",
+      "title": "Blijdorp doodt ruziënde stokstaartjes om rust in groep te brengen",
+      "description": "Na aanhoudende spanningen tussen meerdere mannetjes in de groep stokstaartjes van Diergaarde Blijdorp in Rotterdam heeft de dierentuin een aantal gezonde dieren laten inslapen. Een drastisch besluit, geeft de dierentuin toe, maar het moet ertoe leiden dat de rust in de groep terugkeert. Want daar was al langere tijd geen sprake meer van. Stokstaartmannetjes zijn bijzonder bedreven in het bewaken v",
+      "url": "https://nos.nl/artikel/2616795-blijdorp-doodt-ruziende-stokstaartjes-om-rust-in-groep-te-brengen",
+      "pubDate": "2026-06-02T07:44:37+00:00",
+      "image": "https://images.cdn.nos.nl/8/3/e/h/7/Y/SYfXfyg62qVpoU2d2PPFWXMutrQUDuVxtyaMbQ3/1x408x3536x1989-1024x576.webp",
+      "score": 45,
+      "category": "Opmerkelijk",
+      "location": "Zuid-Holland",
+      "reason": "Bizarre dierentuinverhaal uit Rotterdam met satire-potentieel maar beperkte nieuwswaarde.",
+      "summary": "Diergaarde Blijdorp in Rotterdam heeft gezonde stokstaartjes laten inslapen om groepsrust te herstellen. Dit volgende op aanhoudende spanningen tussen mannetjes."
+    },
+    {
+      "id": "telegraaf-925179443",
+      "source": "Telegraaf",
+      "title": "’Als hij straks schulden maakt in het casino, zijn die dus ook van jou!’",
+      "description": "Journalist en auteur Marith Iedema woont samen met Duncan en zoon Noah (6). Dat ze ooit in een onbezonnen bui getrouwd is in Las Vegas, leverde veel stress, maar ook een mooi verhaal op.",
+      "url": "https://www.telegraaf.nl/vrouw/als-hij-straks-schulden-maakt-in-het-casino-zijn-die-dus-ook-van-jou/154527878.html",
+      "pubDate": "2026-06-02T07:42:00+00:00",
+      "image": "https://prod-img.telegraaf.nl/public/incoming/kznzme-whatsapp-image-2026-06-01-at-13.03.08-1.jpeg/alternates/BASE_SIXTEEN_NINE/WhatsApp%20Image%202026-06-01%20at%2013.03.08%201.jpeg",
+      "score": 15,
+      "category": "Opmerkelijk",
+      "location": "Landelijk",
+      "reason": "Onschadige BN'er-lifestylestuk zonder controverse of actueelheid.",
+      "summary": "Journalist Marith Iedema vertelt over samenwonen met Duncan en zoon Noah. Ze raakte ooit in Las Vegas getrouwd, wat stress maar ook een mooi verhaal opleverde."
+    },
+    {
+      "id": "trouw-3794359316",
       "source": "Trouw",
       "title": "Wie het bezette Olesjky wil verlaten kan alleen nog over de ‘weg des doods’",
       "description": "",
       "url": "https://archive.ph/newest/https://www.trouw.nl/buitenland/wie-het-bezette-olesjky-wil-verlaten-kan-alleen-nog-over-de-weg-des-doods~b05c2fd09/",
       "pubDate": "2026-06-02T07:41:00+00:00",
       "image": "https://image.trouw.nl/274273247/feature-crop/320/320/afbeelding",
-      "score": 5,
+      "score": 0,
       "category": "Overig",
       "location": "Internationaal",
-      "reason": "Oekraïne-vraagstuk zonder Nederlandse hoek; geen PowNed-relevantie.",
-      "summary": "Artikel over evacuatie uit bezet Olesjky in Oekraïne via gevaarlijke routes. Geen Nederlandse context."
+      "reason": "Buitenlandse situatie Oekraïne zonder Nederlands perspectief of link.",
+      "summary": "N/A"
     },
     {
-      "id": "ad-5928924814",
+      "id": "omroep-brabant-8859887886",
+      "source": "Omroep Brabant",
+      "title": "Waarschuwing voor stevig onweer: 'Kan op sommige plekken echt losgaan'",
+      "description": "Het KNMI waarschuwt voor stevige onweersbuien dinsdagmiddag. Daarbij kan veel regen in korte tijd vallen. \"Lokaal misschien met hagelstenen\", vertelde weerman Berend van Straaten van Weerplaza dinsdagochtend in het radioprogramma KEIgoeiemorgen! op Omroep Brabant. \"Windstoten zijn ook niet uitgesloten. Houd dus de regenradar in de gaten vanmiddag.\" De buien die dinsdagochtend vroeg over de provinc",
+      "url": "https://www.omroepbrabant.nl/nieuws/6011465/waarschuwing-voor-stevig-onweer-kan-op-sommige-plekken-echt-losgaan",
+      "pubDate": "2026-06-02T07:40:00+00:00",
+      "image": "https://api.omroepbrabant.nl/img/f/1280/720/0.50/0.50/cmV2aXNpb25zLzEzNzY4ODQtMS5qcGc_c2U9MjA0NS0wMS0wMVQxMCUzQTQwJTNBMDBaJnNpZz1zc1VxRk1VckZ1SmdaWHg5R01qTHJIWVFPTWpBYyUyQkxLTDMyTmdkSkR3blklM0Qmc3A9ciZzcHI9aHR0cHMmc3I9YiZzdD0yMDI1LTAxLTAxVDEwJTNBNDAlM0EwMFomc3Y9MjAyNi0wMi0wNg==",
+      "score": 5,
+      "category": "Overig",
+      "location": "Noord-Brabant",
+      "reason": "Routinematig lokaal weersbericht zonder actuele of controversiële waarde.",
+      "summary": "Het KNMI waarschuwt voor stevige onweersbuien dinsdagmiddag in Noord-Brabant. Veel regen, mogelijk hagelstenen en windstoten worden verwacht."
+    },
+    {
+      "id": "ad-6428058386",
       "source": "AD",
       "title": "Groot Nederlands cryptobedrijf Knaken plotseling offline, toezichthouder houdt kaken stijf op elkaar",
-      "description": "Het Rotterdamse cryptobedrijf Knaken, waar men kan handelen in cryptomunten zoals Bitcoin, is uit de lucht. Op de website van het platform staat dat de bedrijfsactiviteiten ‘vooralsnog gestaakt’ zijn. Wat is er aan de hand?",
+      "description": "Het Rotterdamse cryptobedrijf Knaken, waar men kan handelen in cryptomunten zoals bitcoin, is uit de lucht. Op de website van het platform staat dat de bedrijfsactiviteiten ‘vooralsnog gestaakt’ zijn. Wat is er aan de hand?",
       "url": "https://www.ad.nl/rotterdam/groot-nederlands-cryptobedrijf-knaken-plotseling-offline-toezichthouder-houdt-kaken-stijf-op-elkaar~ac0b14f2/",
       "pubDate": "2026-06-02T07:37:00+00:00",
       "image": "https://images.ad.nl/OWY5N2ZjZDk2MmNiNmZiNDJiODgvZGlvLzI2OTQ4MDgxMC9maXQtd2lkdGgvNDAw/files-an-illustration-photograph-taken-on-november-22-2025-shows-a-gold-plated-souvenir-bitcoin-coin-reflected-in-a-mirror-and-arranged-for-a-photograph-in-front-of-a-computer-screen-displaying-the-bitcoin-monthly-price-chart-in-a-residential-property-in-guildford-south-of-london-bitcoin-the-world-s-biggest-cryptocurrency-extended-its-price-slump-on-february-05-2026-to-trade-under-70-000-for-the-first-time-since-donald-trump-s-presidential-election-victory-in-november-2024-photo-by-justin-tallis-afp",
-      "score": 68,
-      "category": "Opmerkelijk",
+      "score": 65,
+      "category": "Misdaad",
       "location": "Zuid-Holland",
-      "reason": "Nederlands cryptobedrijf-incident met mysterie; financieel-regulatoir schandaal sterk voor PowNed.",
-      "summary": "Het Rotterdamse cryptobedrijf Knaken is plotseling offline gegaan; bedrijfsactiviteiten zijn gestaakt. De toezichthouder houdt zich bedeckt over wat er aan de hand is."
+      "reason": "Verdacht cryptobedrijf uit Rotterdam offline: potentiële fraude of toezichtsthema.",
+      "summary": "Het Rotterdamse cryptoplatform Knaken is plotseling offline gegaan met melding van gestakte bedrijfsactiviteiten. De toezichthouder geeft geen uitsluitsel over de reden."
     },
     {
-      "id": "ad-rotterdam-349994978",
+      "id": "ad-rotterdam-8005862222",
       "source": "AD Rotterdam",
       "title": "Rotterdams cryptobedrijf plotseling offline: wat is er aan de hand?",
-      "description": "Het Rotterdamse cryptobedrijf Knaken, waar men kan handelen in cryptomunten zoals Bitcoin, is uit de lucht. Op de website van het platform staat dat de bedrijfsactiviteiten ‘vooralsnog gestaakt’ zijn. Wat is er aan de hand?",
+      "description": "Het Rotterdamse cryptobedrijf Knaken, waar men kan handelen in cryptomunten zoals bitcoin, is uit de lucht. Op de website van het platform staat dat de bedrijfsactiviteiten ‘vooralsnog gestaakt’ zijn. Wat is er aan de hand?",
       "url": "https://www.ad.nl/rotterdam/rotterdams-cryptobedrijf-plotseling-offline-wat-is-er-aan-de-hand~ac0b14f2/",
       "pubDate": "2026-06-02T07:37:00+00:00",
       "image": "https://images.ad.nl/OWY5N2ZjZDk2MmNiNmZiNDJiODgvZGlvLzI2OTQ4MDgxMC9maXQtd2lkdGgvNDAw/files-an-illustration-photograph-taken-on-november-22-2025-shows-a-gold-plated-souvenir-bitcoin-coin-reflected-in-a-mirror-and-arranged-for-a-photograph-in-front-of-a-computer-screen-displaying-the-bitcoin-monthly-price-chart-in-a-residential-property-in-guildford-south-of-london-bitcoin-the-world-s-biggest-cryptocurrency-extended-its-price-slump-on-february-05-2026-to-trade-under-70-000-for-the-first-time-since-donald-trump-s-presidential-election-victory-in-november-2024-photo-by-justin-tallis-afp",
-      "score": 68,
-      "category": "Opmerkelijk",
+      "score": 65,
+      "category": "Misdaad",
       "location": "Zuid-Holland",
-      "reason": "Nederlands cryptobedrijf-incident met mysterie; financieel-regulatoir schandaal sterk voor PowNed.",
-      "summary": "Het Rotterdamse cryptobedrijf Knaken is plotseling offline gegaan; bedrijfsactiviteiten zijn gestaakt. Onduidelijk wat er aan de hand is."
+      "reason": "Verdacht cryptobedrijf uit Rotterdam offline: potentiële fraude of toezichtsthema.",
+      "summary": "Het Rotterdamse cryptoplatform Knaken is plotseling offline gegaan met melding van gestakte bedrijfsactiviteiten. De reden is nog onduidelijk."
     },
     {
-      "id": "telegraaf-9796099362",
+      "id": "gooi--en-eemlander-9706240952",
+      "source": "Gooi- en Eemlander",
+      "title": "Politie: nog veel onduidelijk over steekpartij in Heerhugowaard",
+      "description": "Er is dinsdag nog veel onduidelijk over het steekincident bij een bedrijf in Heerhugowaard maandagavond. Daarbij vielen een dode en twee gewonden. De politie kan nog niet melden wat de identiteit is van de slachtoffers. Er is nog niemand aangehouden.",
+      "url": "https://www.gooieneemlander.nl/binnenland/politie-nog-veel-onduidelijk-over-steekpartij-in-heerhugowaard/154757200.html",
+      "pubDate": "2026-06-02T07:34:10+00:00",
+      "image": "https://prod-img.noordhollandsdagblad.nl/public/binnenland/pdt82c-a33bbe74-83b1-4096-ab39-bda8bf38ec7c-tmg-webfeed-bin-anp020626053-1.jpeg/alternates/BASE_SIXTEEN_NINE/a33bbe74-83b1-4096-ab39-bda8bf38ec7c_tmg-webfeed-bin_ANP020626053-1.jpeg",
+      "score": 75,
+      "category": "Misdaad",
+      "location": "Noord-Holland",
+      "reason": "Recente steekpartij met dode en gewonden, onderzoek lopend, identiteiten onbekend.",
+      "summary": "Een steekincident bij bedrijf in Heerhugowaard maandagavond eiste één dode en twee gewonden. Politie kan nog niet melden wie de slachtoffers zijn; niemand aangehouden."
+    },
+    {
+      "id": "telegraaf-5052874845",
       "source": "Telegraaf",
       "title": "Bayern München toont serieuze interesse in Ismael Saibari; transferklapper lonkt voor PSV",
       "description": "Er wordt flink getrokken aan de sterkhouders van het kampioenselftal van PSV. Ruimschoots voor het WK is er ook al serieuze interesse in Ismael Saibari, de uitblinker van het afgelopen seizoen en de winnaar van de Gouden Schoen in de Eredivisie. Bayern München heeft serieuze interesse in de Marokkaanse international.",
       "url": "https://www.telegraaf.nl/sport/voetbal/bayern-munchen-toont-serieuze-interesse-in-ismael-saibari-transferklapper-lonkt-voor-psv/154753686.html",
       "pubDate": "2026-06-02T07:31:15+00:00",
       "image": "https://prod-img.telegraaf.nl/public/incoming/d0nn9d-file85wej2j8sf5quamg1x2i/alternates/BASE_SIXTEEN_NINE/file85wej2j8sf5quamg1x2i",
-      "score": 8,
+      "score": 5,
       "category": "Overig",
       "location": "Landelijk",
-      "reason": "Voetbaltransfernieuws; geen PowNed-thema.",
-      "summary": "Bayern München toont interesse in PSV-speler Ismael Saibari. Transfer wordt als mogelijkheid geschetst."
+      "reason": "Sportnieuws zonder politieke of maatschappelijke relevantie voor PowNed.",
+      "summary": "Bayern München toont interesse in PSV-speler Ismael Saibari voor een mogelijke transfer. De Marokkaanse international was uitblinker vorig seizoen en won de Gouden Schoen."
     },
     {
-      "id": "telegraaf-6702337353",
+      "id": "telegraaf-5331380380",
       "source": "Telegraaf",
       "title": "Eerste varende stad op zee, met enorm waterpark en sportstadion: ’Dit monsterschip huisvest straks tachtigduizend mensen’",
-      "description": "De ’Freedom ship’ is een futuristisch plan voor het grootste schip ter wereld. In vergelijking met dit schip lijken de huidige megacruiseschepen slechts miniaturen op zee. Dienend als een stad zou de ’Freedom’ tachtigduizend inwonenden kunnen waarborgen, met nog eens twintigduizend man personeel. De boot zal scholen, zorgcentra en veel mogelijkheden tot vermaak moeten bieden. Dat mag ook wel met t",
+      "description": "De ’Freedom ship’ is een futuristisch plan voor het grootste schip ter wereld. In vergelijking met dit schip lijken de huidige megacruiseschepen slechts miniaturen op zee.",
       "url": "https://www.telegraaf.nl/buitenland/eerste-varende-stad-op-zee-met-enorm-waterpark-en-sportstadion-dit-monsterschip-huisvest-straks-tachtigduizend-mensen/154749582.html",
       "pubDate": "2026-06-02T07:30:14+00:00",
       "image": "https://prod-img.telegraaf.nl/public/incoming/l4q78o-2c435ee4b24348d412f4c154cb438c4ab0fefc88.webp/alternates/BASE_SIXTEEN_NINE/2c435ee4b24348d412f4c154cb438c4ab0fefc88.webp",
-      "score": 35,
-      "category": "Opmerkelijk",
+      "score": 8,
+      "category": "Overig",
       "location": "Internationaal",
-      "reason": "Futuristisch conceptschip; wel controversieel maar buitenlands; matig PowNed-relevant.",
-      "summary": "Het 'Freedom Ship'-concept beschrijft een drijvende stad voor tachtigduizend inwonners met voorzieningen. Dit zou het grootste schip ter wereld worden."
+      "reason": "Futuristisch concept zonder Nederlands of maatschappelijk belang.",
+      "summary": "Een futuristisch ontwerp voor de 'Freedom Ship' zou het grootste schip ter wereld worden met plaats voor tachtigduizend mensen. Het plan omvat een waterpark en sportstadion."
     },
     {
-      "id": "kijk-op-zuid-holland-3512102362",
+      "id": "kijk-op-zuid-holland-6168906134",
       "source": "Kijk op Zuid-Holland",
       "title": "13.000ste woning aangesloten op warmtenet in Drechtsteden: meer dan de helft van doel 2030 bereikt",
       "description": "In de Drechtsteden is afgelopen week de 13.000ste woning aangesloten op het warmtenet. Daarmee is ruim de helft bereikt van het doel om in 2030 minimaal 25.000 woningen aan te sluiten op het warmtenet. Voor duizenden bewoners betekent dit een overstap naar een andere manier van verwarmen: zonder cv-ketel en ... The post 13.000ste woning aangesloten op warmtenet in Drechtsteden: meer dan de helft v",
       "url": "https://www.kijkopzuid-holland.nl/13-000ste-woning-aangesloten-op-warmtenet-in-drechtsteden-meer-dan-de-helft-van-doel-2030-bereikt/",
       "pubDate": "2026-06-02T07:28:45+00:00",
       "image": "",
-      "score": 28,
-      "category": "Overig",
+      "score": 45,
+      "category": "Politiek",
       "location": "Zuid-Holland",
-      "reason": "Routinematig klimaatbeleid; geen schandaal of controverse.",
-      "summary": "In de Drechtsteden zijn 13.000 woningen aangesloten op het warmtenet. Dit bereikt ruim de helft van het doel voor 2030."
+      "reason": "Lokaal duurzaamheidsbeleid in Drechtsteden; relevant voor regionale PowNed-dekking.",
+      "summary": "In de Drechtsteden zijn 13.000 woningen aangesloten op het warmtenet, ruim de helft van het 2030-doel. Bewoners moeten overstappen van cv-ketels naar warmtenetten."
     },
     {
-      "id": "telegraaf-9690001163",
+      "id": "telegraaf-9413417709",
       "source": "Telegraaf",
       "title": "Donkere wolken boven Kiev: doden en gewonden na zware bombardementen",
       "description": "Bij zware aanvallen op verschillende delen van Oekraïne zijn in de nacht van maandag op dinsdag zeker negen mensen om het leven gekomen. Tientallen anderen raakten gewond. Onder meer de hoofdstad Kiev werd getroffen door een reeks luchtaanvallen.",
       "url": "https://www.telegraaf.nl/video/donkere-wolken-boven-kiev-doden-en-gewonden-na-zware-bombardementen/154755575.html",
       "pubDate": "2026-06-02T07:27:00+00:00",
       "image": "https://prod-img.telegraaf.nl/public/incoming/26tomo-502.jpeg/alternates/BASE_SIXTEEN_NINE/502.jpeg",
-      "score": 12,
+      "score": 15,
       "category": "Overig",
       "location": "Internationaal",
-      "reason": "Oekraïne-oorlog zonder Nederlandse hoek; geen PowNed-profiel.",
-      "summary": "Kiev en andere Oekraïense steden ondergaan bombardementen; minstens negen doden en tientallen gewonden. Luchtaanvallen treffen meerdere doelen."
+      "reason": "Buitenlands oorlogsnieuws zonder Nederlandse politieke of maatschappelijke relevantie.",
+      "summary": "Kiev en andere Oekraïense steden werden getroffen door zware bombardementen waarbij negen doden en tientallen gewonden vielen. De aanvallen vonden plaats in de nacht van maandag op dinsdag."
     },
     {
-      "id": "ad-den-haag-6255056602",
+      "id": "ad-den-haag-295864075",
       "source": "AD Den Haag",
       "title": "Klaar voor Kaderock? Alles over blokkenschema en gratis drank vind je hier",
       "description": "Het Haagse popfestival Kaderock staat voor de deur. Vrijdag 5 en zaterdag 6 juni hoor je raggende gitaren en warme klanken. Hier lees je alles over de tickets, het tijdschema en de bereikbaarheid. Veel plezier!",
       "url": "https://www.ad.nl/den-haag/klaar-voor-kaderock-alles-over-blokkenschema-en-gratis-drank-vind-je-hier~a65e141e/",
       "pubDate": "2026-06-02T07:23:01+00:00",
       "image": "https://images.ad.nl/ZWNiOTQ5NzUxNjFmMDBkNTYxMjkvZGlvLzI3NDI3NzcwNi9maXQtd2lkdGgvNDAw/kaderock-2025",
-      "score": 15,
+      "score": 25,
       "category": "Event",
       "location": "Zuid-Holland",
-      "reason": "Lokaal festivalnieuws zonder controverse, schandaal of politieke relevantie voor PowNed.",
-      "summary": "Het Haagse popfestival Kaderock vindt plaats op 5 en 6 juni met informatie over tickets en schema. Het evenement biedt live muziek en bereikbaarheidstips voor bezoekers."
+      "reason": "Lokaal cultuurgebeurtenis in Den Haag met vooruitkijkende informatiewaarde.",
+      "summary": "Het popfestival Kaderock vindt plaats op 5 en 6 juni in Den Haag met optredens en gratis drank. Het artikel bevat informatie over tickets, schema en bereikbaarheid."
     },
     {
-      "id": "telegraaf-6656684455",
+      "id": "telegraaf-8386588493",
       "source": "Telegraaf",
-      "title": "Onweer en regen: hier gaat het stormen",
+      "title": "Onweer en regen op komst: hier gaat het stormen",
       "description": "Er trekken dinsdag verschillende buien over het land. Vooral in de middag kunnen er regionaal onweer, hagel en windstoten tot 75 km/u zich voordoen. In de avond koelt de temperatuur af naar 11 tot 14 graden.",
-      "url": "https://www.telegraaf.nl/video/onweer-en-regen-hier-gaat-het-stormen/154753802.html",
+      "url": "https://www.telegraaf.nl/video/onweer-en-regen-op-komst-hier-gaat-het-stormen/154753802.html",
       "pubDate": "2026-06-02T07:21:00+00:00",
       "image": "https://prod-img.telegraaf.nl/public/incoming/5xebas-10-buienradar.jpg/alternates/BASE_SIXTEEN_NINE/10_buienradar.jpg",
-      "score": 5,
+      "score": 2,
       "category": "Overig",
       "location": "Landelijk",
-      "reason": "Routineweerrapportage zonder bijzondere of controversiële elementen.",
-      "summary": "Dinsdag trekken buien over Nederland met mogelijk onweer, hagel en windstoten tot 75 km/u. Temperatuur daalt in de avond naar 11-14 graden."
+      "reason": "Routineweerbericht zonder nieuwswaarde voor PowNed-publiek.",
+      "summary": "Dinsdag worden buien verwacht met mogelijk onweer, hagel en windstoten tot 75 km/u. Temperatuur zakt 's avonds af naar 11-14 graden."
     },
     {
-      "id": "ad-8381083297",
+      "id": "ad-8269291414",
       "source": "AD",
       "title": "Wat vind jij? Wie moet er in de spits bij Oranje?",
       "description": "Op donderdag 11 juni barst het WK voetbal los. Deze zomer regent het topwedstrijden en strijdt Oranje om de wereldtitel. Veel om over te praten en te discussiëren, want jij vindt er ongetwijfeld wat van. Doe mee aan onze actie „Wat vind jij?” en maak zelf dagelijks kans op geweldige prijzen. Jouw mening is goud waard!",
@@ -508,14 +799,14 @@
         "BN De Stem",
         "PZC"
       ],
-      "score": 8,
+      "score": 5,
       "category": "Overig",
       "location": "Landelijk",
-      "reason": "Routinesportnieuws over voetbal zonder PowNed-relevante opiniewaarde of controverse.",
-      "summary": "Het WK voetbal begint 11 juni en Oranje strijdt om de wereldtitel. Een lezersvraag nodigt uit discussie uit over de spitspositie in het Nederlands team."
+      "reason": "Sportpoll zonder politieke of controversiële lading relevant voor PowNed.",
+      "summary": "Een poll vraagt lezers wie in de spits van Oranje moet spelen voor het WK op 11 juni. Deelnemers kunnen dagelijks prijzen winnen."
     },
     {
-      "id": "nos-5047192375",
+      "id": "nos-9032091681",
       "source": "NOS",
       "title": "Racistische leuzen bij brand in restaurant Wijdenes: 'Oprotten'",
       "description": "Bij een restaurant in Wijdenes heeft vannacht een zeer grote brand gewoed. Op de muren van het restaurant zijn op meerdere plekken teksten geschreven. Er staat 'oprotten' en 'kanker turk'. De politie onderzoekt of er sprake is van brandstichting. De brand brak vannacht rond 03.00 uur uit bij Ora Restaurant &amp; Café. Er werden meerdere voertuigen ingezet om het vuur te blussen. Rond 07.00 uur van",
@@ -525,25 +816,25 @@
       "score": 78,
       "category": "Misdaad",
       "location": "Noord-Holland",
-      "reason": "Brand met racistische inscripties; mogelijk brandstichting en haatmisdrijf met maatschappelijke spanning.",
-      "summary": "Een grote brand vernietigde Ora Restaurant & Café in Wijdenes waarbij racistische leuzen op muren verschenen. Politie onderzoekt mogelijk brandstichting en haatmisdrijf."
+      "reason": "Brand met racistische leuzen en mogelijke brandstichting; controversieel en misdaadgerelateerd.",
+      "summary": "Een grote brand verwoestte restaurant Ora in Wijdenes, waarbij racistische teksten zoals 'kanker turk' op de muren werden aangetroffen. Politie onderzoekt brandstichting."
     },
     {
-      "id": "telegraaf-4538398365",
+      "id": "telegraaf-5096327462",
       "source": "Telegraaf",
       "title": "De bruisende jazz-scene in Amsterdam in de jaren dertig: hoe de stad een smeltkroes van clubs werd",
       "description": "Een levensgrote zwart-witfoto van de Amerikaanse trompettist Louis Armstrong is het eerste wat je ziet als je in Amsterdam de tentoonstelling binnenloopt over de populariteit van jazz in de roemruchte jaren dertig in de hoofdstad. De wereldster arriveert op dat moment met de trein in Amsterdam om een reeks optredens te geven in het Carlton Hotel, dat een van de hotspots in de stad was.",
       "url": "https://www.telegraaf.nl/entertainment/cultuur/de-bruisende-jazz-scene-in-amsterdam-in-de-jaren-dertig-hoe-de-stad-een-smeltkroes-van-clubs-werd/154492335.html",
       "pubDate": "2026-06-02T07:19:00+00:00",
       "image": "https://prod-img.telegraaf.nl/public/incoming/lwkiww-01-blow-up-aankomst-louis-armstrong-op-a.c.jpg/alternates/BASE_SIXTEEN_NINE/01%20blow%20up%20Aankomst%20Louis%20Armstrong%20op%20A.C.jpg",
-      "score": 25,
+      "score": 15,
       "category": "Overig",
       "location": "Noord-Holland",
-      "reason": "Historisch jazzartikel interessant maar zonder huidige politieke of controversiële relevantie.",
-      "summary": "Een tentoonstelling in Amsterdam belicht de jazzcultuur van de jaren dertig toen Louis Armstrong en anderen optrad. De stad werd een bruisende smeltkroes van jazzclubs."
+      "reason": "Historische tentoonstelling zonder actueel nieuws of PowNed-relevantie.",
+      "summary": "Amsterdam herdenkt de jazz-scene uit de jaren dertig met een tentoonstelling over Amerikaanse muzikanten als Louis Armstrong. Het Carlton Hotel was destijds een van de populaire jazzclubes in de hoofdstad."
     },
     {
-      "id": "ad-1435589518",
+      "id": "ad-3862947372",
       "source": "AD",
       "title": "Bayern München toont serieuze interesse in Ismael Saibari, PSV wil absolute hoofdprijs",
       "description": "PSV houdt al enige tijd rekening met een vertrek van Ismael Saibari in de zomer. Dat zou weleens sneller kunnen gaan dan verwacht, nu Bayern München een van de serieuze gegadigden voor hem is geworden.",
@@ -554,14 +845,14 @@
         "De Stentor",
         "PZC"
       ],
-      "score": 12,
+      "score": 5,
       "category": "Overig",
-      "location": "Landelijk",
-      "reason": "Sportnieuws over voetbaltransfer zonder bijzondere maatschappelijke of politieke relevantie.",
-      "summary": "PSV-speler Ismael Saibari trekt de aandacht van Bayern München voor zomerse transfer. PSV verwacht hoge transfersom voor de middenvelder."
+      "location": "Internationaal",
+      "reason": "Pure sportnieuws zonder maatschappelijke of PowNed-relevantie.",
+      "summary": "Bayern München toont interesse in PSV-speler Ismael Saibari voor komende zomer. PSV streeft naar een hoge transfersom voor de middenvelder."
     },
     {
-      "id": "ad-8739868451",
+      "id": "ad-6819559784",
       "source": "AD",
       "title": "Rusland zet hypersonische raketten in bij massale aanval op Oekraïne: 100 gewonden",
       "description": "Het Russische ministerie van Defensie heeft bevestigd dat het hypersonische raketten heeft ingezet bij de massale aanvallen op Oekraïne. Een hypersonische raket kan vijf keer sneller vliegen dan de geluidssnelheid. Volg alle ontwikkelingen over de oorlog in Oekraïne in ons liveblog.",
@@ -569,30 +860,31 @@
       "pubDate": "2026-06-02T07:18:00+00:00",
       "image": "https://images.ad.nl/Y2NlYzdiY2UxY2ExMmRiZDMxYjgvZGlvLzI3NDI5ODk4Mi9maXQtd2lkdGgvNDAw/a-woman-carries-a-baby-near-a-residential-house-damaged-after-a-russian-strike-in-kyiv-ukraine-on-tuesday-june-2-2026-ap-photo-evgeniy-maloletka",
       "duplicate_sources": [
+        "BN De Stem",
         "PZC"
       ],
-      "score": 35,
+      "score": 20,
       "category": "Overig",
       "location": "Internationaal",
-      "reason": "Oekraïne-oorlog zonder Nederland-angle; relevant voor context maar niet PowNed-kernmissie.",
-      "summary": "Rusland zette hypersonische raketten in bij massale aanval op Oekraïne met 100 gewonden. De raketten vliegen vijf keer sneller dan geluid."
+      "reason": "Buitenlands oorlogsnieuws zonder Nederlandse hoek of maatschappelijke impact.",
+      "summary": "Rusland zet hypersonische raketten in bij aanvallen op Oekraïne, aldus het Russische ministerie van Defensie. Het aantal gewonden loopt op tot honderd personen."
     },
     {
-      "id": "bn-de-stem-663584648",
+      "id": "bn-de-stem-3356421936",
       "source": "BN De Stem",
       "title": "Tuinhuisje hangt plots in de lucht, brandweer en politie schieten te hulp",
       "description": "Door een defecte kraan hing er maandagavond rond 19.00 uur een tuinhuisje in de lucht. Het gebeurde aan de Wolvendonk in Raamsdonksveer. De politie en de brandweer schoten te hulp.",
       "url": "https://www.bndestem.nl/112-nieuws-brabant/tuinhuisje-hangt-plots-in-de-lucht-brandweer-en-politie-schieten-te-hulp~ac9ee7ca/",
       "pubDate": "2026-06-02T07:18:00+00:00",
       "image": "https://images.bndestem.nl/ODgyNDc0N2ZmZjc0MDIwN2E1YzAvZGlvLzI3NDI5OTAyMy9maXQtd2lkdGgvNDAw/het-huisje-werd-een-tuin-uit-getild",
-      "score": 42,
+      "score": 55,
       "category": "Misdaad",
       "location": "Noord-Brabant",
-      "reason": "Lokaal ongeluk met brandweer/politie inzet; opmerkelijk maar geen schandaal of controversie.",
-      "summary": "Een defecte kraan deed een tuinhuisje maandagavond in Raamsdonksveer in de lucht hangen. Politie en brandweer snelden ter hulp."
+      "reason": "Opmerkelijk lokaal incident met hulpdiensten; geschikt voor PowNed's bizarre nieuwsselectie.",
+      "summary": "Een defecte kraan liet maandagavond een tuinhuisje in Raamsdonksveer in de lucht zweven. Brandweer en politie kwamen ter plaatse voor hulpverlening."
     },
     {
-      "id": "gooi--en-eemlander-8804928063",
+      "id": "gooi--en-eemlander-3404671947",
       "source": "Gooi- en Eemlander",
       "title": "Jonge tieners kunnen ’eindelijk’ betalen met hun mobiel: ’Ze willen dit heel graag’",
       "description": "Jongeren onder de 16 jaar kunnen vanaf nu ook betalen met hun telefoon. Buut, het jongerenmerk van ABN Amro, maakt dit namelijk mogelijk voor klanten vanaf 10 jaar. „Tieners willen dit verschrikkelijk graag”, vertelt ABN Amro-topbestuurder Annerie Vreugdenhil.",
@@ -602,93 +894,93 @@
       "duplicate_sources": [
         "Telegraaf"
       ],
-      "score": 15,
+      "score": 25,
       "category": "Overig",
       "location": "Noord-Holland",
-      "reason": "Routinenieuws over betaalmogelijkheden voor jongeren, geen PowNed-relevantie.",
-      "summary": "ABN Amro's jongerenmerk Buut stelt betalen met mobiel beschikbaar voor kinderen vanaf 10 jaar. Het initiatief richt zich op de groeiende vraag van tieners naar digitale betaalmethoden."
+      "reason": "Financieel-commercieel nieuws over jongerenbanking zonder maatschappelijke urgentie.",
+      "summary": "ABN Amro's jongerenapp Buut maakt mobiel betalen mogelijk voor kinderen vanaf 10 jaar. Jongeren onder de 16 kunnen nu met hun telefoon pinnen."
     },
     {
-      "id": "bn-de-stem-9354569129",
+      "id": "bn-de-stem-7246391810",
       "source": "BN De Stem",
       "title": "Bayern München aast op PSV’er Ismael Saibari, Eindhovenaren willen absolute hoofdprijs",
       "description": "PSV houdt al enige tijd rekening met een vertrek van Ismael Saibari in de zomer. Dat zou weleens sneller kunnen gaan dan verwacht, nu Bayern München een van de serieuze gegadigden voor hem is geworden. Saibari wilde zich op het WK concentreren en daarna nog even op vakantie, maar inmiddels is duidelijk dat de Duitse topclub hem overweegt als versterking. PSV is inmiddels op de hoogte van de intere",
       "url": "https://www.bndestem.nl/voetbal/bayern-munchen-aast-op-psver-ismael-saibari-eindhovenaren-willen-absolute-hoofdprijs~af9acf13/",
       "pubDate": "2026-06-02T07:09:00+00:00",
       "image": "https://images.bndestem.nl/MWEwNTc3OTU4YmM4NTVmOWFjODgvZGlvLzI2OTE4OTI3Ny9maXQtd2lkdGgvNDAw/eindhoven-28-01-2026-philips-stadium-season-2025-2026-uefa-champions-league-football-league-phase-matchday-8-match-between-psv-and-bayern-munchen-picture-shows-psv-player-ismael-saibari-scores-the-1-1",
-      "score": 8,
+      "score": 5,
       "category": "Overig",
       "location": "Noord-Brabant",
-      "reason": "Sportnieuws zonder nationale of maatschappelijke impact relevant voor PowNed.",
-      "summary": "Bayern München toont interesse in PSV-voetballer Ismael Saibari voor de komende transferperiode. PSV streeft naar een hoge transferprijs voor de middenvelder."
+      "reason": "Pure sportnieuws (PSV-transfermarkt) zonder PowNed-waarde.",
+      "summary": "Bayern München vertoont interest in PSV-middenvelder Ismael Saibari als versterkingsoptie. PSV streeft naar maximale transfervergoeding in onderhandelingen."
     },
     {
-      "id": "ad-1577816109",
+      "id": "ad-5279500753",
       "source": "AD",
-      "title": "Tieners schitteren op Roland Garros: hoe Joao Fonseca en Rafael Jódar (19) de tenniswereld op stelten zetten",
-      "description": "Wat goed is komt snel. Heel snel. De 19-jarige tennistalenten Joao Fonseca en Rafael Jódar kloppen niet meer op de deur; na een reeks fraaie zeges hebben ze hem geforceerd. Vandaag staan ze op Roland Garros voor het eerst in de kwartfinales van een grandslamtoernooi.",
-      "url": "https://www.ad.nl/tennis/tieners-schitteren-op-roland-garros-hoe-joao-fonseca-en-rafael-jodar-19-de-tenniswereld-op-stelten-zetten~a335fb2d4/",
-      "pubDate": "2026-06-02T07:05:14+00:00",
+      "title": "Pas 19 jaar, maar nu al steengoed: João Fonseca en Rafael Jódar zetten Roland Garros op stelten",
+      "description": "Wat goed is komt snel. Heel snel. De 19-jarige tennistalenten João Fonseca en Rafael Jódar kloppen niet meer op de deur; na een reeks fraaie zeges hebben ze hem geforceerd. Vandaag staan ze op Roland Garros voor het eerst in de kwartfinales van een grandslamtoernooi.",
+      "url": "https://www.ad.nl/tennis/pas-19-jaar-maar-nu-al-steengoed-joao-fonseca-en-rafael-jodar-zetten-roland-garros-op-stelten~a335fb2d4/",
+      "pubDate": "2026-06-02T07:05:00+00:00",
       "image": "https://images.ad.nl/ZmM3ZjI3ODUyNWUxMGVhZWU4ZjQvZGlvLzI3NDI5MjYzNS9maXQtd2lkdGgvNDAw/paris-france-may-31-joao-fonseca-of-brazil-celebrates-a-point-against-casper-ruud-of-norway-during-the-men-s-singles-fourth-round-match-on-day-eight-of-the-2026-french-open-at-roland-garros-on-may-31-2026-in-paris-france-photo-by-clive-brunskill-getty-images-paris-france-may-31-rafael-jodar-of-spain-reacts-during-his-match-against-pablo-carreno-busta-of-spain-on-court-suzanne-lenglen-in-the-fourth-round-of-the-singles-competition-at-the-2026-french-open-tennis-tournament-at-roland-garros-on-may-31st-2026-in-paris-france-photo-by-lionel-hahn-getty-images",
       "duplicate_sources": [
         "BN De Stem",
         "De Stentor",
         "PZC"
       ],
-      "score": 5,
+      "score": 8,
       "category": "Overig",
       "location": "Internationaal",
-      "reason": "Internationaal sportnieuws zonder Nederlandse relevantie.",
-      "summary": "Tennistalenten Joao Fonseca en Rafael Jódar bereiken kwartfinales van Roland Garros. Beide spelers, beide 19 jaar, hebben opvallende resultaten neergezet."
+      "reason": "Sportnieuws over tennistalenten zonder Nederlandse of PowNed-relevantie.",
+      "summary": "Tennistalenten João Fonseca en Rafael Jódar bereiken voor het eerst de kwartfinales van Roland Garros. De beide 19-jarigen maken indruk met een reeks overwinningen."
     },
     {
-      "id": "ad-den-haag-3203055657",
+      "id": "ad-den-haag-2929925365",
       "source": "AD Den Haag",
       "title": "Ik durf te stellen dat het gejank van het luchtalarm ons als landgenoten op een vreemde manier verbindt",
       "description": "De eerste maandag van de maand en daar was-ie weer. Je herkent ‘m aan het kenmerkende geluid, sinds jaar en dag: de sirenes gaan af. Een geruststellend idee. Het geeft mij een gevoel van veiligheid: als er iets aan de knikker is, kunnen we worden gewaarschuwd. Een gevoel van saamhorigheid, dat geeft het ook.",
       "url": "https://www.ad.nl/den-haag/ik-durf-te-stellen-dat-het-gejank-van-het-luchtalarm-ons-als-landgenoten-op-een-vreemde-manier-verbindt~a838c083/",
       "pubDate": "2026-06-02T07:03:50+00:00",
       "image": "https://images.ad.nl/ZTJhNTI4NjFhYWQzMzc4N2E3MzcvZGlvLzI3NDI4NDE3OS9maXQtd2lkdGgvNDAw/een-luchtalarm-een-van-de-vele-die-op-de-eerste-van-de-maand-wordt-getest-het-is-de-bedoeling-dat-deze-op-termijn-worden-vervangen-door-nl-alert-meldingen-op-de-mobiele-telefoon",
-      "score": 42,
-      "category": "Opmerkelijk",
-      "location": "Zuid-Holland",
-      "reason": "Lezenswaardig reflectief stuk over luchtalarmtradities en saamhorigheid.",
-      "summary": "Een columnist reflecteert op het eerste maandaagse luchtalarm en de betekenis ervan voor Nederlandse veiligheid en verbondenheid. Het geluid als ritueel wordt ervaren als geruststellend en verbindend."
-    },
-    {
-      "id": "ad-3229853268",
-      "source": "AD",
-      "title": "Dosering medicijnen kan vaak veel lager, bewijst onderzoek Radboudumc: kan veel geld besparen",
-      "description": "Mensen krijgen vaak een veel hogere dosering van een bepaald medicijn dan nodig is, blijkt uit steeds meer onderzoeken. Het Radboudumc heeft nu bijvoorbeeld aangetoond dat patiënten met ernstige psoriasis hun dosering vaak veilig fors kunnen verlagen. Dat scheelt veel geld.",
-      "url": "https://www.ad.nl/binnenland/dosering-medicijnen-kan-vaak-veel-lager-bewijst-onderzoek-radboudumc-kan-veel-geld-besparen~a8673804/",
-      "pubDate": "2026-06-02T07:00:34+00:00",
-      "image": "https://images.ad.nl/ZGFiMzk4YTg5NjljN2JiNTA5NmUvZGlvLzI3NDI4NTc5Ny9maXQtd2lkdGgvNDAw/dermatoloog-en-hoogleraar-ontstekingsziekten-van-de-huid-elke-de-jong-van-het-radboudumc",
-      "duplicate_sources": [
-        "BN De Stem",
-        "PZC"
-      ],
-      "score": 38,
+      "score": 35,
       "category": "Overig",
-      "location": "Landelijk",
-      "reason": "Medisch onderzoek interessant, maar geen PowNed-kernthema's, louter feitelijk.",
-      "summary": "Het Radboudumc toont aan dat medicijndeseringen vaak veel hoger zijn dan noodzakelijk. Verlaging leidt tot kostenbesparingen zonder veiligheidrisico's."
+      "location": "Zuid-Holland",
+      "reason": "Sentimenteel essay over luchtalarm; marginaal relevant zonder concrete PowNed-angle.",
+      "summary": "Een opiniecolumn reflecteert op de maandelijkse sirenetest als symbool van nationale veiligheid en saamhorigheid. Het geluid wordt beschreven als geruststellend en verbindend."
     },
     {
-      "id": "nos-3503881354",
+      "id": "nos-4006519847",
       "source": "NOS",
       "title": "Meteorologen waarschuwen: El Niño komt eraan, maak je op voor extreem weer",
       "description": "Het lijkt er sterk op dat de wereld vanaf dit najaar te maken krijgt met een periode met grotere risico's op weersextremen, veranderende neerslagpatronen en een hogere gemiddelde temperatuur. De Wereld Meteorologische Organisatie (WMO) waarschuwt vandaag dat landen er goed aan doen om zich voor te bereiden op een mogelijk stevige El Niño, zoals het weerfenomeen heet dat deze veranderingen aandrijf",
       "url": "https://nos.nl/artikel/2616791-meteorologen-waarschuwen-el-nino-komt-eraan-maak-je-op-voor-extreem-weer",
       "pubDate": "2026-06-02T07:00:02+00:00",
       "image": "https://images.cdn.nos.nl/1/9/9/E/K/v/pyRhEdPLzKbmi1udRMV4V2HG9YChRW7XPAbgoyY/0x167x4000x2250-1024x576.webp",
-      "score": 12,
+      "score": 5,
       "category": "Overig",
       "location": "Internationaal",
-      "reason": "Routineweer/klimaatnieuws zonder Nederlandse politieke of maatschappelijke twist.",
-      "summary": "De Wereld Meteorologische Organisatie waarschuwt voor een naderende El Niño-periode. Dit weerfenomeen kan extreme weersomstandigheden en temperatuurstijging veroorzaken."
+      "reason": "Routineuze weerwaarschuwing zonder Nederlandse politieke of maatschappelijke relevantie.",
+      "summary": "De WMO waarschuwt voor mogelijke El Niño-effecten met extremer weer en hogere temperaturen. Landen worden opgeroepen zich voor te bereiden op deze klimaatverandering."
     },
     {
-      "id": "ad-3275912438",
+      "id": "ad-8589903234",
+      "source": "AD",
+      "title": "Dosering medicijnen kan vaak veel lager, bewijst onderzoek Radboudumc: kan veel geld besparen",
+      "description": "Mensen krijgen vaak een veel hogere dosering van een bepaald medicijn dan nodig is, blijkt uit steeds meer onderzoeken. Het Radboudumc heeft nu bijvoorbeeld aangetoond dat patiënten met ernstige psoriasis hun dosering vaak veilig fors kunnen verlagen. Dat scheelt veel geld.",
+      "url": "https://www.ad.nl/binnenland/dosering-medicijnen-kan-vaak-veel-lager-bewijst-onderzoek-radboudumc-kan-veel-geld-besparen~a8673804/",
+      "pubDate": "2026-06-02T07:00:00+00:00",
+      "image": "https://images.ad.nl/ZGFiMzk4YTg5NjljN2JiNTA5NmUvZGlvLzI3NDI4NTc5Ny9maXQtd2lkdGgvNDAw/dermatoloog-en-hoogleraar-ontstekingsziekten-van-de-huid-elke-de-jong-van-het-radboudumc",
+      "duplicate_sources": [
+        "BN De Stem",
+        "PZC"
+      ],
+      "score": 15,
+      "category": "Overig",
+      "location": "Landelijk",
+      "reason": "Medisch onderzoeksnieuws interessant maar zonder controversieel of scandaleus karakter.",
+      "summary": "Het Radboudumc toont aan dat patiënten met psoriasis hun medicijndosering veilig kunnen verlagen. Dit kan aanzienlijke kostenbesparingen opleveren."
+    },
+    {
+      "id": "ad-6483273853",
       "source": "AD",
       "title": "Downtown van Michiel van Erp is openingsfilm Nederlands Film Festival",
       "description": "De 46e editie van het Nederlands Film Festival (NFF) wordt geopend met de film Downtown van de Nederlandse regisseur Michiel van Erp. Dat heeft de organisatie van het filmfestival dinsdag aangekondigd.",
@@ -700,42 +992,56 @@
         "De Stentor",
         "PZC"
       ],
-      "score": 25,
-      "category": "Event",
+      "score": 8,
+      "category": "Overig",
       "location": "Landelijk",
-      "reason": "Filmevenement zonder scherpe opinie of controverse; evenement wel vermeldingswaardig.",
-      "summary": "Het Nederlands Film Festival selecteert 'Downtown' van Michiel van Erp als openingsfilm van de 46e editie. Het festival vindt plaats in Utrecht."
+      "reason": "Routinematig cultuurnieuws over filmfestival zonder PowNed-relevante controversie.",
+      "summary": "De 46e editie van het Nederlands Film Festival opent met de film Downtown van Michiel van Erp. Het festival is een jaarlijks terugkerend cultuurgebeurtenis."
     },
     {
-      "id": "gooi--en-eemlander-7917287082",
+      "id": "de-stentor-7654069046",
+      "source": "De Stentor",
+      "title": "Waarom de oude Hema voor Apeldoorners zoveel meer is dan een winkel",
+      "description": "Wanneer je het een oerlelijke blokkendoos noemt, is het lastig om het tegendeel te bewijzen. Maar ik noem het veel liever een icoon voor onze binnenstad. Nog een paar weken en dan wordt alles anders op de plek waar de tijd heeft stilgestaan.",
+      "url": "https://www.destentor.nl/apeldoorn/waarom-de-oude-hema-voor-apeldoorners-zoveel-meer-is-dan-een-winkel~aa4fa10d/",
+      "pubDate": "2026-06-02T07:00:00+00:00",
+      "image": "https://images.destentor.nl/Yzg1YzNjYzg1NjBhNTA2Y2EwOGQvZGlvLzI3NDEwNDc3My9maXQtd2lkdGgvNDAw/st20260527-0588-apeldoorn-jeroen-pol-doet-lezersoproep-wat-zijn-jouw-herinneringen-aan-deze-hema-aan-de-hoofdstraat-in-apeldoorn-foto-maarten-sprangh",
+      "score": 42,
+      "category": "Opmerkelijk",
+      "location": "Gelderland",
+      "reason": "Lokaal Apeldoornse nostalgiaverhaal over iconisch gebouw interessant voor regionale PowNed-aandacht.",
+      "summary": "Een Hema-winkelpand in Apeldoorn sluit na decennia als stationair handelspunt. Inwoners zien het karakteristieke pand als belangrijk erfgoedelement van de binnenstad."
+    },
+    {
+      "id": "gooi--en-eemlander-5514624122",
       "source": "Gooi- en Eemlander",
       "title": "Het tweede jaar van Ilva in Amerika was al goed, maar de titel zou het helemaal afmaken: ’Hopelijk stap ik als ’national champion’ het vliegtuig in’",
       "description": "Mijn laatste column schrijf ik niet vanuit Austin, Texas, maar vanuit Gainesville in Georgia. Hier vindt de komende dagen de finale van het seizoen plaats. Laten we hopen dat we er nog in zitten als jullie dit lezen, want dan maak ik nog kans om woensdag als ’national champion’ naar Nederland te vliegen.",
       "url": "https://www.gooieneemlander.nl/sport/sport-regionaal/het-tweede-jaar-van-ilva-in-amerika-was-al-goed-maar-de-titel-zou-het-helemaal-afmaken-hopelijk-stap-ik-als-national-champion-het-vliegtuig-in/153275230.html",
       "pubDate": "2026-06-02T07:00:00+00:00",
       "image": "https://prod-img.gooieneemlander.nl/public/incoming/e5e0d6-file85t34ow3w8918ctup1iud/alternates/BASE_SIXTEEN_NINE/file85t34ow3w8918ctup1iud",
-      "score": 18,
+      "score": 5,
       "category": "Overig",
       "location": "Noord-Holland",
-      "reason": "Sportcolumn over Amerikaanse competitie, geen PowNed-kernthema's.",
-      "summary": "Een columnist schrijft over het seizoensfinale van haar Amerikaansecompetitie in Georgia. Zij hoopt het kampioenschap te winnen voordat zij naar Nederland terugkeert."
+      "reason": "Persoonlijke sportcolumn zonder nieuwswaarde of maatschappelijke relevantie.",
+      "summary": "Een columnist schrijft vanuit Georgia over een mogelijke nationale sportuitslag. Het stuk is vooral persoonlijk getinte sportverslaggeving."
     },
     {
-      "id": "rtv-noord-2407956505",
+      "id": "rtv-noord-865541282",
       "source": "RTV Noord",
-      "title": "Mohamed bouwt rijksmonument om tot hiphophuis: ‘Echt een plek waar mensen en werelden samenkomen’",
+      "title": "Dat gekke gebouw bij het UMCG is nu een hiphophuis: 'Je stapt binnen en bent direct op je plek'",
       "description": "Mohamed Yusuf Boss is als een kind zo blij. De danser en theatermaker zag hekken staan om het karakteristieke regulateurshuisje bij het UMCG en wilde op die plek dolgraag dans- en muzieklessen geven.",
-      "url": "https://www.rtvnoord.nl/cultuur/1409498/mohamed-bouwt-rijksmonument-om-tot-hiphophuis-echt-een-plek-waar-mensen-en-werelden-samenkomen",
+      "url": "https://www.rtvnoord.nl/cultuur/1409498/dat-gekke-gebouw-bij-het-umcg-is-nu-een-hiphophuis-je-stapt-binnen-en-bent-direct-op-je-plek",
       "pubDate": "2026-06-02T07:00:00+00:00",
       "image": "https://i.regiogroei.cloud/c47a90cb-997e-359b-b09e-d6295d699fe5.jpg?width=552&height=310&aspect_ratio=552:310&cb=296e0cbfa3eb51b9f15ea791437af1e5",
-      "score": 45,
+      "score": 35,
       "category": "Opmerkelijk",
       "location": "Groningen",
-      "reason": "Lokaal cultuurnieuws; interessant verhaal maar geen PowNed-kernthema's aanwezig.",
-      "summary": "Mohamed Yusuf Boss richt een hiphophuis in een rijksmonument bij het UMCG in Groningen in. Het wordt een ruimte voor dans- en muzieklessen waarin verschillende werelden samenkomen."
+      "reason": "Leuk lokaal verhaal over creatieve herbestemming karakteristiek gebouw in Groningen.",
+      "summary": "Een karakteristiek regulateurshuisje bij het UMCG wordt omgebouwd tot hiphophuis voor dans- en muzieklessen. Initiatiefnemer Mohamed Yusuf Boss is enthousiast over de transformatie."
     },
     {
-      "id": "trouw-6112416831",
+      "id": "trouw-7843048991",
       "source": "Trouw",
       "title": "Netanyahu: Israël valt Beiroet aan als Hezbollah geweld voortzet",
       "description": "",
@@ -746,28 +1052,28 @@
         "Telegraaf",
         "Gooi- en Eemlander"
       ],
-      "score": 15,
+      "score": 0,
       "category": "Overig",
       "location": "Internationaal",
-      "reason": "Zuiver buitenland zonder Nederlandse angle; geen PowNed-relevantie.",
-      "summary": "Netanyahu stelt dat Israël Beiroet zal aanvallen als Hezbollah het geweld voortzet. De verklaring betreft regionale spanningen in het Midden-Oosten."
+      "reason": "Zuiver buitenlandnieuws zonder Nederlandse verbinding of relevantie voor PowNed.",
+      "summary": "Netanyahu doet uitspraken over mogelijke Israeli militaire actie tegen Hezbollah. Het betreft zuiver internationaal Midden-Oosten-conflict."
     },
     {
-      "id": "nu.nl-6371138085",
+      "id": "nu.nl-6400352221",
       "source": "NU.nl",
       "title": "Belgische moordenaar verlaat met enkelband de gevangenis na bijna halve eeuw",
       "description": "De Belgische moordenaar Freddy Horion mag de gevangenis verlaten. Hij mag nu met een enkelband in een gespecialiseerde instelling verblijven, besloot een rechtbank in Gent maandag. De inmiddels 78-jarige Horion heeft bijna een halve eeuw vastgezeten.",
       "url": "https://www.nu.nl/buitenland/6397884/belgische-moordenaar-verlaat-met-enkelband-de-gevangenis-na-bijna-halve-eeuw.html",
       "pubDate": "2026-06-02T06:44:53+00:00",
       "image": "https://images.nu.nl/m/v7hx4i0acqsa_sqr256/1521/0/3072/3072/belgische-moordenaar-verlaat-met-enkelband-de-gevangenis-na-bijna-halve-eeuw.jpg",
-      "score": 25,
+      "score": 5,
       "category": "Misdaad",
       "location": "Internationaal",
-      "reason": "Belgische zaak zonder Nederlandse betrokkenheid; beperkt relevantie voor PowNed.",
-      "summary": "De 78-jarige Belgische moordenaar Freddy Horion verlaat na 47 jaar gevangenis en krijgt huisarrest met elektronisch toezicht. Een Gentse rechtbank keurde de voorwaardelijke invrijheidstelling goed."
+      "reason": "Belgisch rechtscassunieuws zonder Nederlandse link of maatschappelijke relevantie.",
+      "summary": "Een Belgische moordenaar mag na 50 jaar gevangenis met enkelbandtoezicht vrijkomen. De 78-jarige Horion gaat naar een gespecialiseerde instelling."
     },
     {
-      "id": "dordt-centraal-4574537136",
+      "id": "dordt-centraal-599781604",
       "source": "Dordt Centraal",
       "title": "21-jarige man met spoed naar ziekenhuis na steekincident in Zwijndrecht",
       "description": "ZWIJNDRECHT - Bij een steekincident in een woning aan de Nijhoffstraat in Zwijndrecht is in de nacht van maandag op dinsdag een 21-jarige man ernstig gewond geraakt. Het slachtoffer is met spoed naar het ziekenhuis vervoerd. Volgens de politie is het mogelijk dat aan het incident een ruzie in de relationele sfeer vooraf is gegaan. Over de precieze aanleiding en toedracht is op dit moment nog weini",
@@ -777,11 +1083,11 @@
       "score": 72,
       "category": "Misdaad",
       "location": "Zuid-Holland",
-      "reason": "Geweldincident met mogelijk relationeel motief; typisch PowNed-verhaal in regionaal perspectief.",
-      "summary": "Een 21-jarige man raakte ernstig gewond bij een steekincident in een woning in Zwijndrecht. De politie vermoedtdat een relationele ruzie aan het incident voorafging."
+      "reason": "Steekincident met ernstig gewonde in Zwijndrecht; lokaal misdaadverhaal met potentiële ontwikkelingen.",
+      "summary": "Een 21-jarige man raakte ernstig gewond bij een steekincident in een woning in Zwijndrecht. Politie vermoedt dat een relationele ruzie aan het incident voorafging."
     },
     {
-      "id": "nu.nl-1846221531",
+      "id": "nu.nl-3844244626",
       "source": "NU.nl",
       "title": "Lanceerbasis Blue Origin pas in 2028 gereed vanwege schade door ontploffing",
       "description": "De reparatie van de Amerikaanse lanceerbasis waar vorige week een raket is ontploft, zal waarschijnlijk lang duren. Mogelijk is de raketbasis van Blue Origin pas in 2028 weer hersteld, zegt NASA-topman Jared Isaacman.",
@@ -791,11 +1097,11 @@
       "score": 8,
       "category": "Overig",
       "location": "Internationaal",
-      "reason": "Amerikaanse ruimtevaart zonder Nederlandse hoek; volledige buitenlandse zaak.",
-      "summary": "De lanceerbasis van Blue Origin zal naar verwachting pas in 2028 hersteld zijn na een raketexplosie. NASA-topman Jared Isaacman benadrukte de omvang van de reparatiewerkzaamheden."
+      "reason": "Amerikaanse ruimtevaart zonder Nederlands belang; routinematig buitenlandnieuws zonder PowNed-relevantie.",
+      "summary": "Blue Origin-lanceerbasis van Elon Musk vereist reparatie na raketexplosie. Herstelling duurt mogelijk tot 2028."
     },
     {
-      "id": "telegraaf-2980207490",
+      "id": "telegraaf-8187718474",
       "source": "Telegraaf",
       "title": "NASA: reparatie lanceerbasis Blue Origin gaat lang duren na explosie Bezos-raket",
       "description": "De reparatie van de schade aan de lanceerbasis van het ruimtevaartbedrijf Blue Origin door de ontplofte raket zal volgens NASA-topman Jared Isaacman waarschijnlijk lange tijd gaan duren. Mogelijk is de raketbasis pas in 2028 weer volledig hersteld, aldus Isaacman in een interview met zakenzender CNBC.",
@@ -805,326 +1111,22 @@
       "score": 8,
       "category": "Overig",
       "location": "Internationaal",
-      "reason": "Duplicate van NU.nl-artikel; Amerikaans onderwerp zonder Nederlandse relevantie.",
-      "summary": "NASA schat dat de raketbasis van Blue Origin pas in 2028 volledig gerepareerd is na de explosie. De schade is volgens NASA-topman Isaacman aanzienlijk."
+      "reason": "Duplicate Amerikaanse ruimtevaartnieuws zonder Nederlands belang of controversieel aspect.",
+      "summary": "NASA-topman voorspelt lange reparatieperiode voor Blue Origin-basis na ontploffing. Mogelijke heropening in 2028."
     },
     {
-      "id": "telegraaf-1714008409",
+      "id": "telegraaf-1864782594",
       "source": "Telegraaf",
       "title": "Southampton-eigenaar ontslaat manager niet na ’spygate’, ondanks dwingen stagiair: ’Ik had geen optie’",
       "description": "De promotiestrijd naar de Premier League werd afgelopen maand overschaduwd door ’spygate’, waarbij Southampton tegenstander Middlesbrough bespioneerde. The Saints werden uiteindelijk uit de play-offs gezet. Toch hoeft manager Tonda Eckert daardoor niet te vrezen voor zijn baan.",
       "url": "https://www.telegraaf.nl/sport/voetbal/southampton-eigenaar-ontslaat-manager-niet-na-spygate-ondanks-dwingen-stagiair-ik-had-geen-optie/154748450.html",
       "pubDate": "2026-06-02T06:36:53+00:00",
       "image": "https://prod-img.telegraaf.nl/public/sport/ju1z3w-nlb-203649423.jpg/alternates/BASE_SIXTEEN_NINE/NLB-203649423.jpg",
-      "score": 5,
-      "category": "Overig",
-      "location": "Internationaal",
-      "reason": "Britse voetbalnieuws zonder Nederlandse angle; niet relevant voor PowNed.",
-      "summary": "Southampton-manager Tonda Eckert behoudt zijn positie ondanks de 'spygate'-rel tegen Middlesbrough. The Saints werden uit de play-offs gezet maar de manager krijgt zijn contract niet ontbonden."
-    },
-    {
-      "id": "telegraaf-6079051507",
-      "source": "Telegraaf",
-      "title": "LIVE | Europese beurzen ’licht groen’, AEX een zuinige plus",
-      "description": "De AEX staat voorlopig op een zuinig plusje van 0.23 procent, de AMX staat iets lager op 0,6 procent en de ASCX zelfs -1,3 procent, in Duitsland zal de DAX openen met +0.5 procent de FTSE100 +0.3 procent. De Franse CAC40 staat op +0.3 procent",
-      "url": "https://www.telegraaf.nl/financieel/live-europese-beurzen-licht-groen-aex-een-zuinige-plus/154737457.html",
-      "pubDate": "2026-06-02T06:36:00+00:00",
-      "image": "https://prod-img.telegraaf.nl/public/incoming/c9akjf-beursgong-2.jpg/alternates/BASE_SIXTEEN_NINE/BEURSGONG%202.jpg",
-      "score": 2,
-      "category": "Overig",
-      "location": "Landelijk",
-      "reason": "Routinematig marktbericht; geen nieuws of PowNed-relevantie.",
-      "summary": "Europese beurzen openen licht groen met marginale winsten. De AEX staat op een bescheiden plus van 0,23 procent."
-    },
-    {
-      "id": "ad-rotterdam-1740424758",
-      "source": "AD Rotterdam",
-      "title": "Burgemeester Schouten luidt noodklok over verdwijnen luchtalarm: 'Dit is onverantwoord'",
-      "description": "De sirenes loeiden, telefoons maakten lawaai. Bij het maandelijkse proefalarm deze maandag werd ook een NL-Alert verstuurd. De Rotterdamse burgemeester Carola Schouten waarschuwt: enkel een alarm op de telefoon is niet voldoende. „De sirenes moeten blijven’’, staat in een brandbrief aan de Tweede Kamer.",
-      "url": "https://www.ad.nl/rotterdam/burgemeester-schouten-luidt-noodklok-over-verdwijnen-luchtalarm-dit-is-onverantwoord~af5d9da2/",
-      "pubDate": "2026-06-02T06:31:00+00:00",
-      "image": "https://images.ad.nl/ODc5ZTczNzJiZjFmOTBiMmE3MjcvZGlvLzI3Mzc2OTMyMi9maXQtd2lkdGgvNDAw/serie-afgekocht-tt20260302-35618-buurse-luchtalarm-sirene-met-mast-editie-alle-foto-reinier-van-willigen-amsterdam-nederland-01-12-25-een-persoon-bekijkt-op-zijn-smartphone-rond-12-00-uur-het-landelijke-nl-alert-testbericht-dat-de-overheid-halfjaarlijks-verstuurt-om-het-waarschuwingssysteem-voor-noodsituaties-zoals-grote-branden-extreem-weer-gaslekken-en-dreigingen-te-controleren-foto-joris-van-gennip",
-      "score": 72,
-      "category": "Politiek",
-      "location": "Zuid-Holland",
-      "reason": "Burgemeester stuurt brandbrief naar Tweede Kamer over kritieke veiligheidskwestie.",
-      "summary": "Burgemeester Schouten waarschuwt dat het verdwijnen van luchtsirenes gevaarlijk is en stuurt brandbrief naar Kamer. Zij stelt dat alleen telefoonalarmen onvoldoende zijn voor noodsituaties."
-    },
-    {
-      "id": "telegraaf-6887658023",
-      "source": "Telegraaf",
-      "title": "Oud-militair en Alpe d’HuZes-deelnemer gaat grootste zorgverzekeraar leiden",
-      "description": "Zilveren Kruis krijgt een nieuwe bestuursvoorzitter. Vanaf 15 juni zwaait Peter Langenbach (57) de scepter bij ’s lands grootste zorgverzekeraar. Hij hoeft niet te wennen aan werkomgeving en collega’s, want hij loopt al sinds 2022 rond op het kantoor in Leiden als directeur Zorginkoop.",
-      "url": "https://www.telegraaf.nl/financieel/oud-militair-en-alpe-dhuzes-deelnemer-gaat-grootste-zorgverzekeraar-leiden/153756095.html",
-      "pubDate": "2026-06-02T06:30:00+00:00",
-      "image": "https://prod-img.telegraaf.nl/public/incoming/irxcdb-combo-zilveren-kruis.jpg/alternates/BASE_SIXTEEN_NINE/COMBO%20-%20ZILVEREN%20KRUIS.jpg",
-      "score": 15,
-      "category": "Overig",
-      "location": "Zuid-Holland",
-      "reason": "Routinematig personeelsbericht zonder maatschappelijk belang of controverse.",
-      "summary": "Peter Langenbach wordt nieuwe bestuursvoorzitter van Zilveren Kruis per 15 juni. De oud-militair werkt al sinds 2022 bij de zorgverzekeraar in Leiden."
-    },
-    {
-      "id": "omroep-brabant-2988201228",
-      "source": "Omroep Brabant",
-      "title": "Intents Festival: hoe een carnavalsclub uitgroeide tot wereldfestival",
-      "description": "Van een carnavalsclub naar een festival waar bezoekers uit Australi&euml; voor naar Oisterwijk reizen. Het klinkt als een jongensdroom, maar voor Remko Hermans en zijn vrienden is het werkelijkheid. Wat begon bij carnavalsvereniging De Kloontjes groeide uit tot Intents Festival: een van de grootste hardstyle festivals van Nederland. Oprichter Remko Hermans (45) vertelt dat het idee ontstond vanuit",
-      "url": "https://www.omroepbrabant.nl/nieuws/6010992/intents-festival-hoe-een-carnavalsclub-uitgroeide-tot-wereldfestival",
-      "pubDate": "2026-06-02T06:30:00+00:00",
-      "image": "https://api.omroepbrabant.nl/img/f/1280/720/0.50/0.50/cmV2aXNpb25zLzIzNTM4MDMtMS5qcGc_c2U9MjA0NS0wMS0wMVQxMCUzQTQwJTNBMDBaJnNpZz10JTJCYXFWN0VoU290Z0JnV2U1WllscWFSMGNXOUZ1N1F6ZldzeURCQWxRcEklM0Qmc3A9ciZzcHI9aHR0cHMmc3I9YiZzdD0yMDI1LTAxLTAxVDEwJTNBNDAlM0EwMFomc3Y9MjAyNi0wMi0wNg==",
-      "score": 35,
-      "category": "Opmerkelijk",
-      "location": "Noord-Brabant",
-      "reason": "Interessant succesverhaal lokaal festival, maar niet controversieel of scandaleus genoeg.",
-      "summary": "Intents Festival in Oisterwijk groeide uit van carnavalsclub tot een van Nederlands grootste hardstyle festivals. Oprichter Remko Hermans ziet bezoekers uit Australië naar het evenement reizen."
-    },
-    {
-      "id": "ad-7364137808",
-      "source": "AD",
-      "title": "Jongen (17) uit Bergen aangehouden na fakkelincident bij bekerfinale tussen AZ en NEC",
-      "description": "De politie heeft een 17-jarige jongen uit Bergen aangehouden wegens betrokkenheid bij fakkelgeweld tijdens de bekerfinale in Rotterdam. Het incident vond plaats bij de wedstrijd tussen AZ en NEC.",
-      "url": "https://www.ad.nl/bergen-nh/jongen-17-uit-bergen-aangehouden-na-fakkelincident-bij-bekerfinale-tussen-az-en-nec~aef0682c/",
-      "pubDate": "2026-06-02T06:28:00+00:00",
-      "image": "https://images.ad.nl/MzBkNmRhODhkMjNmNWRhOTVkYTMvZGlvLzI3Mjk3OTIwNS9maXQtd2lkdGgvNDAw/bekerfinale-2026-nec-az-een-kuip-vol-sfeer-sraat-garant-voor-een-mooie-strijd-om-de-knvb-bker-vaste-prik-voor-aanvang-de-fans-steken-massaal-vuurwerk-af-waardoor-er-een-waar-rookgordijn-ontstaat-waardoor-de-wedstrijd-later-begint-foto-pim-ras",
-      "score": 68,
-      "category": "Misdaad",
-      "location": "Noord-Holland",
-      "reason": "Jonge dader aangehouden voor geweld bij voetbalevenement; PowNed volgt rellende supporters.",
-      "summary": "Een 17-jarige jongen uit Bergen is aangehouden voor betrokkenheid bij fakkelgeweld tijdens de bekerfinale tussen AZ en NEC in Rotterdam. Het incident betreft vermeend supporter-geweld."
-    },
-    {
-      "id": "ad-den-haag-584510364",
-      "source": "AD Den Haag",
-      "title": "76 bekeuringen bij controle van 130 voertuigen in Voorburg",
-      "description": "Bij een grootschalige verkeerscontrole op de Prins Bernhardlaan in Voorburg zijn afgelopen vrijdag 76 bekeuringen uitgedeeld. Dat meldt de politie deze week op haar sociale mediakanalen.",
-      "url": "https://www.ad.nl/leidschendam-voorburg/76-bekeuringen-bij-controle-van-130-voertuigen-in-voorburg~a3fdee59/",
-      "pubDate": "2026-06-02T06:24:47+00:00",
-      "image": "https://images.ad.nl/YmZhMTZmOWJiOTA3MjBhNzJiYWUvZGlvLzI3NDI5ODM3OS9maXQtd2lkdGgvNDAw/integrale-handhavingsactie-in-leidschendam-voorburg",
-      "score": 25,
-      "category": "Misdaad",
-      "location": "Zuid-Holland",
-      "reason": "Routinematige verkeerscontrole met bekeuringen; geen bijzondere nieuwswaarde.",
-      "summary": "Bij een verkeerscontrole in Voorburg zijn 76 bekeuringen uitgedeeld aan 130 gecontroleerde voertuigen. De politie voerde de actie af op de Prins Bernhardlaan."
-    },
-    {
-      "id": "ad-7237026165",
-      "source": "AD",
-      "title": "‘Oprotten’ en andere racistische leuzen op gevel van afgebrand restaurant in dorpje bij Hoorn",
-      "description": "In het Noord-Hollandse Wijdenes heeft dinsdag een zeer grote brand gewoed in een horecagelegenheid. Kort voor 07.00 uur meldde de veiligheidsregio dat het sein brand meester is gegeven.",
-      "url": "https://www.ad.nl/binnenland/oprotten-en-andere-racistische-leuzen-op-gevel-van-afgebrand-restaurant-in-dorpje-bij-hoorn~a2a117f0/",
-      "pubDate": "2026-06-02T06:19:06+00:00",
-      "image": "https://images.ad.nl/YWU2MzU0OTU0ZDg3Mjc3NTI2MWYvZGlvLzI3NDI5ODI0MS9maXQtd2lkdGgvNDAw/brand-in-restaurant-wijdenes",
-      "duplicate_sources": [
-        "BN De Stem",
-        "De Stentor",
-        "PZC"
-      ],
-      "score": 76,
-      "category": "Misdaad",
-      "location": "Noord-Holland",
-      "reason": "Brand met racistische graffiti; combinatie van geweld en haatspraak trekt PowNed-aandacht.",
-      "summary": "Een grote brand heeft maandagochtend een horecagelegenheid in Wijdenes vernietigd. Kort voor de brand waren racistische leuzen op de gevel aangebracht."
-    },
-    {
-      "id": "telegraaf-6178270833",
-      "source": "Telegraaf",
-      "title": "Blake Lively zet schadeclaim tegen Justin Baldoni door",
-      "description": "Blake Lively wil doorgaan met haar verzoek om een schadevergoeding van Justin Baldoni. Dat meldt de Britse krant Daily Mail op basis van een zitting die maandag plaatsvond in een rechtbank in New York.",
-      "url": "https://www.telegraaf.nl/entertainment/sterren/blake-lively-zet-schadeclaim-tegen-justin-baldoni-door/154746658.html",
-      "pubDate": "2026-06-02T06:18:57+00:00",
-      "image": "https://prod-img.telegraaf.nl/public/incoming/9nyfdf-anp-558879124.jpg/alternates/BASE_SIXTEEN_NINE/ANP-558879124.jpg",
-      "score": 8,
-      "category": "Opmerkelijk",
-      "location": "Internationaal",
-      "reason": "Amerikaans BN'er-conflict zonder Nederlandse relevantie of controverse.",
-      "summary": "Blake Lively zet haar schadeclaim tegen Justin Baldoni voort na een zitting in New York. De zaak speelt zich volledig af in de Verenigde Staten."
-    },
-    {
-      "id": "rtv-noord-2269820395",
-      "source": "RTV Noord",
-      "title": "112-nieuws: Trekker met giertank belandt in sloot bij Den Ham",
-      "description": "In dit 112-blog houden we je deze dinsdag op de hoogte van het laatste 112-nieuws. Je vindt hier een overzicht van ongelukken, branden, storingen en misdrijven.",
-      "url": "https://www.rtvnoord.nl/112/1409710/112-nieuws-trekker-met-giertank-belandt-in-sloot-bij-den-ham",
-      "pubDate": "2026-06-02T06:16:10+00:00",
-      "image": "https://i.regiogroei.cloud/20dadc4a-7bb0-3eb3-9aa1-f03c904ee655.jpg?width=552&height=310&aspect_ratio=552:310&cb=c36ea89e4c4cdf362605e76e1bdbec33",
       "score": 12,
       "category": "Overig",
-      "location": "Groningen",
-      "reason": "Routinematig incident uit 112-blog; onvoldoende bijzonder voor PowNed.",
-      "summary": "Een trekker met giertank is in een sloot beland bij Den Ham in Groningen. Het voorval maakt deel uit van dagelijks 112-nieuws."
-    },
-    {
-      "id": "telegraaf-8259289665",
-      "source": "Telegraaf",
-      "title": "Deze 100 jonge miljonairs zijn goed voor een vermogen van 6,4 miljard euro",
-      "description": "De rest van het land mag dan klagen over extreme benzineprijzen of torenhoge inflatie: het vermogen van onze jonge miljonairs stijgt volgens Quote enorm.",
-      "url": "https://www.telegraaf.nl/binnenland/deze-100-jonge-miljonairs-zijn-goed-voor-een-vermogen-van-64-miljard-euro/154740924.html",
-      "pubDate": "2026-06-02T06:16:00+00:00",
-      "image": "https://prod-img.telegraaf.nl/public/incoming/ymd4tw-combo-miljonairs.jpg/alternates/BASE_SIXTEEN_NINE/COMBO%20-%20Miljonairs.jpg",
-      "score": 50,
-      "category": "Overig",
-      "location": "Landelijk",
-      "reason": "Geen score beschikbaar.",
-      "summary": "De rest van het land mag dan klagen over extreme benzineprijzen of torenhoge inflatie: het vermogen van onze jonge miljonairs stijgt volgens Quote enorm."
-    },
-    {
-      "id": "de-stentor-9206985255",
-      "source": "De Stentor",
-      "title": "Ik ben op zoek naar oud hooi of stro: wie kan mij helpen?",
-      "description": "In Putten kun je terecht voor vijftig exemplaren van het tijdschrift Landleven en wie is er in Heino een horloge verloren? De ene lezer heeft iets nodig, de ander biedt iets aan. In ‘Lezers helpen lezers’ verbindt de Stentor al jaren mensen met vraag en aanbod. Ook vandaag hebben we weer vijf nieuwe oproepen.",
-      "url": "https://www.destentor.nl/feelgood/ik-ben-op-zoek-naar-oud-hooi-of-stro-wie-kan-mij-helpen~a44532e2/",
-      "pubDate": "2026-06-02T06:15:04+00:00",
-      "image": "https://images.destentor.nl/MWY1NGIyOWY2NThlNjFhZmEwNTUvZGlvLzc2Mzk5MzE0L2ZpdC13aWR0aC80MDA/strobalen-in-een-schuur",
-      "score": 50,
-      "category": "Overig",
-      "location": "Landelijk",
-      "reason": "Geen score beschikbaar.",
-      "summary": "In Putten kun je terecht voor vijftig exemplaren van het tijdschrift Landleven en wie is er in Heino een horloge verloren? De ene lezer heeft iets nodig, de ander biedt iets aan. In ‘Lezers helpen lez"
-    },
-    {
-      "id": "de-stentor-9839761351",
-      "source": "De Stentor",
-      "title": "Herstel beruchte lift kan nog lang duren, advies aan wie niet met de trap kan: ‘Pak taxi op kosten van ProRail’",
-      "description": "Het repareren van de beruchte glazen lift op station Lent, waar keer op keer mensen in vastzitten, kan nog een tijd duren. Voor wie niet met de trap kan, is een taxi op kosten van ProRail mogelijk een optie. De brandweer moest de deur zondag openbreken om een familie te bevrijden.",
-      "url": "https://www.destentor.nl/binnenland/herstel-beruchte-lift-kan-nog-lang-duren-advies-aan-wie-niet-met-de-trap-kan-pak-taxi-op-kosten-van-prorail~a2aeba20b/",
-      "pubDate": "2026-06-02T06:09:00+00:00",
-      "image": "https://images.destentor.nl/NzYxNjU4YzJkNjMwNzBiMDc3NjUvZGlvLzI3NDI0NzE2NS9maXQtd2lkdGgvNDAw/de-brandweer-bij-de-lift-op-station-lent",
-      "score": 50,
-      "category": "Overig",
-      "location": "Landelijk",
-      "reason": "Geen score beschikbaar.",
-      "summary": "Het repareren van de beruchte glazen lift op station Lent, waar keer op keer mensen in vastzitten, kan nog een tijd duren. Voor wie niet met de trap kan, is een taxi op kosten van ProRail mogelijk een"
-    },
-    {
-      "id": "sleutelstad-7254115185",
-      "source": "Sleutelstad",
-      "title": "Burgemeester Heijkoop over zijn bezoek aan de coa-locaties, de Den Tonkelaar-verkiezing en de veiligheidsmarkt",
-      "description": "In het gesprek met de burgemeester spreekt verslaggever Chris de Waard een keer per maand met burgemeester Peter Heijkoop over actuele onderwerpen. Deze keer spraken ze over de verkiezing voor een nieuwe Den Tonkelaar-redenaar die op 3 oktober in het Van der Werfpark de koraalzangers gaat toespreken. De burgemeester moet dan al improviserend op die [&#8230;]",
-      "url": "https://sleutelstad.nl/2026/06/02/burgemeester-heijkoop-over-zijn-bezoek-aan-de-coa-locaties-de-den-tonkelaar-verkiezing-en-de-veiligheidsmarkt/",
-      "pubDate": "2026-06-02T06:06:18+00:00",
-      "image": "",
-      "score": 50,
-      "category": "Overig",
-      "location": "Landelijk",
-      "reason": "Geen score beschikbaar.",
-      "summary": "In het gesprek met de burgemeester spreekt verslaggever Chris de Waard een keer per maand met burgemeester Peter Heijkoop over actuele onderwerpen. Deze keer spraken ze over de verkiezing voor een nie"
-    },
-    {
-      "id": "gooi--en-eemlander-9640521272",
-      "source": "Gooi- en Eemlander",
-      "title": "Wijnproeverij Bussum beleeft derde editie, opbrengst gaat naar goede doelen",
-      "description": "Ook dit jaar zal in Bussum een Wijnproeverij georganiseerd worden. Op vrijdag 19 juni openen twintig ondernemers in het centrum van het dorp hun deuren om gasten te verwelkomen voor een avond vol wijnplezier.",
-      "url": "https://www.gooieneemlander.nl/regio/gooi-en-eemland/wijnproeverij-bussum-beleeft-derde-editie-opbrengst-gaat-naar-goede-doelen/154517645.html",
-      "pubDate": "2026-06-02T06:03:00+00:00",
-      "image": "https://prod-img.gooieneemlander.nl/public/incoming/wk2sav-wijnproeverij-bussum-3.jpeg/alternates/BASE_SIXTEEN_NINE/Wijnproeverij%20Bussum_3.jpeg",
-      "score": 50,
-      "category": "Overig",
-      "location": "Landelijk",
-      "reason": "Geen score beschikbaar.",
-      "summary": "Ook dit jaar zal in Bussum een Wijnproeverij georganiseerd worden. Op vrijdag 19 juni openen twintig ondernemers in het centrum van het dorp hun deuren om gasten te verwelkomen voor een avond vol wijn"
-    },
-    {
-      "id": "telegraaf-9473036480",
-      "source": "Telegraaf",
-      "title": "Zorgen bij Oranje-opponent na ’vernedering’ door spottende Noren: ’Verfrissend als deze Zweden thuisblijven’",
-      "description": "Het Nederlands elftal treft op het WK 2026 in de groepsfase onder andere Zweden. Die ploeg kreeg maandagavond - tien dagen voor de start - een flinke tik te verwerken. Het oefenduel met buurman Noorwegen werd kansloos met 3-1 verloren.",
-      "url": "https://www.telegraaf.nl/sport/voetbal/zorgen-bij-oranje-opponent-na-vernedering-door-spottende-noren-verfrissend-als-deze-zweden-thuisblijven/154738403.html",
-      "pubDate": "2026-06-02T06:01:00+00:00",
-      "image": "https://prod-img.telegraaf.nl/public/incoming/dvt59x-norway-v-sweden-international-friendly/alternates/BASE_SIXTEEN_NINE/Norway%20v%20Sweden%20-%20International%20Friendly",
-      "score": 50,
-      "category": "Overig",
-      "location": "Landelijk",
-      "reason": "Geen score beschikbaar.",
-      "summary": "Het Nederlands elftal treft op het WK 2026 in de groepsfase onder andere Zweden. Die ploeg kreeg maandagavond - tien dagen voor de start - een flinke tik te verwerken. Het oefenduel met buurman Noorwe"
-    },
-    {
-      "id": "rtv-noord-4767507685",
-      "source": "RTV Noord",
-      "title": "Na Groningen heeft nu ook Midden-Groningen een hitteplan",
-      "description": "Na Groningen is Midden-Groningen de tweede gemeente in onze provincie met een hitteplan. Daarin staat bijvoorbeeld dat zorgorganisaties en bedrijven koele plekken beschikbaar stellen bij aanhoudende warmte.",
-      "url": "https://www.rtvnoord.nl/natuur/1409703/na-groningen-heeft-nu-ook-midden-groningen-een-hitteplan",
-      "pubDate": "2026-06-02T06:00:08+00:00",
-      "image": "https://i.regiogroei.cloud/24d1e652-c4fe-35d3-9fb2-1cce350b3cea.jpg?width=552&height=310&aspect_ratio=552:310&cb=6e6d2fa6989e3a19dbf301d74e7e35c3",
-      "score": 50,
-      "category": "Overig",
-      "location": "Landelijk",
-      "reason": "Geen score beschikbaar.",
-      "summary": "Na Groningen is Midden-Groningen de tweede gemeente in onze provincie met een hitteplan. Daarin staat bijvoorbeeld dat zorgorganisaties en bedrijven koele plekken beschikbaar stellen bij aanhoudende w"
-    },
-    {
-      "id": "ad-8487021749",
-      "source": "AD",
-      "title": "Nieuwe wet dwingt bedrijven om achterstallig loon te betalen",
-      "description": "Bedrijven die hun personeel te weinig loon betalen, kunnen straks harder worden aangepakt. Het kabinet komt met een wet waardoor werknemers die worden onderbetaald alsnog het geld krijgen waar ze recht op hebben. Vooral arbeidsmigranten worden te vaak uitgebuit, vindt het kabinet.",
-      "url": "https://www.ad.nl/politiek/nieuwe-wet-dwingt-bedrijven-om-achterstallig-loon-te-betalen~ac4c798f/",
-      "pubDate": "2026-06-02T06:00:00+00:00",
-      "image": "https://images.ad.nl/NjdiMGVlMDAwNzk4OWE5NTZmM2IvZGlvLzIwMjQ5NDYwNS9maXQtd2lkdGgvNDAw/nederland-roemeense-seizoensarbeiders-steken-asperges-in-brabant-anp-hollandse-hoogte-paulien-van-de-loo",
-      "duplicate_sources": [
-        "BN De Stem",
-        "De Stentor",
-        "PZC"
-      ],
-      "score": 50,
-      "category": "Overig",
-      "location": "Landelijk",
-      "reason": "Geen score beschikbaar.",
-      "summary": "Bedrijven die hun personeel te weinig loon betalen, kunnen straks harder worden aangepakt. Het kabinet komt met een wet waardoor werknemers die worden onderbetaald alsnog het geld krijgen waar ze rech"
-    },
-    {
-      "id": "ad-8752966393",
-      "source": "AD",
-      "title": "Peter van Vossen vertelt wat er misging op het WK 1994: ‘Ook John de Wolf heeft mijn toernooi verziekt’",
-      "description": "Waar Aron Winter het WK 1994 zijn beste van zeven eindtoernooien vond, ziet Peter van Vossen het toernooi in de Verenigde Staten juist als een gemiste kans. „Ik begrijp wel dat Koeman geen zeurpieten wil meenemen, zoals spelers die niet in het basiselftal zullen staan. Je moet zo’n toernooi doorkomen met z’n allen.’’",
-      "url": "https://www.ad.nl/wk-voetbal/peter-van-vossen-vertelt-wat-er-misging-op-het-wk-1994-ook-john-de-wolf-heeft-mijn-toernooi-verziekt~aed74c82/",
-      "pubDate": "2026-06-02T06:00:00+00:00",
-      "image": "https://images.ad.nl/MjhmOTU2NDRlOGFiMmQwNjU4NzkvZGlvLzI3NDI4ODY1MS9maXQtd2lkdGgvNDAw/4-jul-1994-peter-van-vossen-19-of-holland-is-brought-down-by-phil-babb-14-of-ireland-during-the-1994-world-cup-game-at-the-citrus-bowl-in-orlando-florida-mandatory-credit-ben-radford-allsport",
-      "score": 5,
-      "category": "Overig",
       "location": "Internationaal",
-      "reason": "Nostalgie over voetbal WK 1994; geen actueel nieuws of PowNed-relevantie",
-      "summary": "Oud-voetballer Peter van Vossen blikt terug op zijn deelname aan het WK 1994 in de VS. Hij beschouwt het toernooi als een gemiste kans vanwege selectiekeuzes van bondscoach Koeman."
-    },
-    {
-      "id": "de-stentor-2367731153",
-      "source": "De Stentor",
-      "title": "VfB Stuttgart-fans krijgen geen gelijk na bezwaar tegen burgemeester Deventer over terugsturen bussen",
-      "description": "Urenlang in een bus langs de A1, wachtend op een rit naar stadion De Adelaarshorst. Die rit kwam nooit. Zeven maanden na het duel tussen Go Ahead Eagles en VfB Stuttgart krijgen Duitse fans ongelijk in hun bezwaarzaak. Burgemeester Ron König mocht de bussen wegsturen.",
-      "url": "https://www.destentor.nl/deventer/vfb-stuttgart-fans-krijgen-geen-gelijk-na-bezwaar-tegen-burgemeester-deventer-over-terugsturen-bussen~ac28d437/",
-      "pubDate": "2026-06-02T06:00:00+00:00",
-      "image": "https://images.destentor.nl/ZGZiNjQ0MDg5NWJhNTVmN2FmYjIvZGlvLzI3MTU5NDk0Ni9maXQtd2lkdGgvNDAw/fans-van-stuttgart-die-wel-aankwamen-in-deventer-kregen-niet-altijd-een-warm-onthaal",
-      "score": 38,
-      "category": "Misdaad",
-      "location": "Overijssel",
-      "reason": "Lokaal publiekordereincident met internationale context; burgemeesterbesluit is relevante uitspraak",
-      "summary": "Duitse voetbalfans van VfB Stuttgart verliezen bezwaarzaak tegen burgemeester Deventer over terugsturen bussen na wedstrijd Go Ahead Eagles. Burgemeester Ron König mag de maatregel handhaven."
-    },
-    {
-      "id": "pzc-8774479112",
-      "source": "PZC",
-      "title": "Boeren slaan regenwater onder de grond op tegen droogte: minister Van Essen komt kijken in Serooskerke",
-      "description": "Of hij al een zak met miljoenen euro’s klaar heeft liggen voor Zeeland? Nou nee, zo ver wil minister Jaimi van Essen (Landbouw) niet gaan. Al ziet hij wel dat er mooie projecten zijn om te zorgen voor zoet water. Dus als Zeeland zaken wil doen, valt er best met hem te praten.",
-      "url": "https://www.pzc.nl/veere/boeren-slaan-regenwater-onder-de-grond-op-tegen-droogte-minister-van-essen-komt-kijken-in-serooskerke~a58a7804/",
-      "pubDate": "2026-06-02T06:00:00+00:00",
-      "image": "https://images.pzc.nl/NzY4NjkwOWQ5ZGVjODQ3NWUyZDAvZGlvLzI3NDI4MzE2MS9maXQtd2lkdGgvNDAw/werkbezoek-minister-jaimi-van-essen-landbouw-werkbezoek-bij-maatschap-tuinderij-lobros-in-serooskerke-2026",
-      "score": 42,
-      "category": "Politiek",
-      "location": "Zeeland",
-      "reason": "Ministrieel bezoek met waterproblematiek; klimaat/landbouw relevant voor PowNed-publiek",
-      "summary": "Minister Jaimi van Essen bezoekt Zeeland om innovatieve projecten voor wateropslag tegen droogte in te zien. Geen miljoenentoezeggingen gegeven, maar onderhandelingsbereidheid getoond."
-    },
-    {
-      "id": "omroep-brabant-1162802688",
-      "source": "Omroep Brabant",
-      "title": "Graf vader Vincent van Gogh opgeknapt, maar liggen er bommen?",
-      "description": "Midden in een nieuwbouwwijk, vlakbij het drukke verkeer in Nuenen, ligt een kleine begraafplaats. Je zou er zo aan voorbijlopen, er staat een modern gaashekwerk omheen en wat bomen. Alleen nabestaanden en de gemeente hebben de sleutel. Maar deze plek moet opgeknapt en wat zichtbaarder worden, vinden ze in Nuenen. Want niemand minder dan de vader van schilder Vincent van Gogh ligt er begraven. Klei",
-      "url": "https://www.omroepbrabant.nl/nieuws/6011418/graf-vader-vincent-van-gogh-opgeknapt-maar-liggen-er-bommen",
-      "pubDate": "2026-06-02T06:00:00+00:00",
-      "image": "https://api.omroepbrabant.nl/img/f/1280/720/0.50/0.50/cmV2aXNpb25zLzQ5MDkzOTktMS5qcGc_c2U9MjA0NS0wMS0wMVQxMCUzQTQwJTNBMDBaJnNpZz1ZbWZoY1N1Vmx1diUyRlRyTVFQbmc2RVhueU12VkZ2ZGYlMkJIJTJGR2hPRVdxU0FzJTNEJnNwPXImc3ByPWh0dHBzJnNyPWImc3Q9MjAyNS0wMS0wMVQxMCUzQTQwJTNBMDBaJnN2PTIwMjYtMDItMDY=",
-      "score": 28,
-      "category": "Opmerkelijk",
-      "location": "Noord-Brabant",
-      "reason": "Lokale curieuze story over Van Goghs vader; minimale actuele nieuwswaarde",
-      "summary": "Begraafplaats in Nuenen waar vader van Vincent van Gogh begraven ligt, wordt opgeknapt en zichtbaarder gemaakt. Gemeente vraagt aandacht voor deze historische plek midden in nieuwbouwwijk."
+      "reason": "Engels voetbalbeslissing zonder Nederlandse relevantie; sport-gerelateerd en geen PowNed-kernthema's.",
+      "summary": "Southampton-manager Tonda Eckert behoudt zijn positie ondanks spionageschandaal tegen Middlesbrough. The Saints werden toch uit promotie-play-offs gezet."
     }
   ]
 }
