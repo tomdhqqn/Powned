@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="nl">
 <head>
@@ -105,7 +106,8 @@
   <h1>Redactiedashboard</h1>
   <div class="meta">
     <span id="lastUpdated">—</span>
-    <button id="refreshBtn">Vernieuwen</button>
+    <button id="refreshBtn" title="Herlaad feeds.json (data zoals laatst opgehaald)">Vernieuwen</button>
+    <button id="triggerBtn" title="Trigger een echte nieuwe RSS-run via GitHub Actions" style="background:#fff;color:#363636;font-weight:600;">⚡ Nieuwe run</button>
   </div>
 </header>
 
@@ -120,6 +122,9 @@
 
     <h3>Categorieën</h3>
     <div id="categoryFilters"></div>
+
+    <h3>Locatie (provincie)</h3>
+    <div id="locationFilters"></div>
 
     <h3>Bronnen</h3>
     <div id="sourceFilters"></div>
@@ -154,6 +159,19 @@
 
 <script>
 const CATEGORIES = ["Politiek", "Opmerkelijk", "Media", "Misdaad", "Event", "Overig"];
+const LOCATIONS = [
+  "Landelijk",
+  "Drenthe", "Flevoland", "Friesland", "Gelderland", "Groningen",
+  "Limburg", "Noord-Brabant", "Noord-Holland", "Overijssel",
+  "Utrecht", "Zeeland", "Zuid-Holland",
+  "Internationaal"
+];
+
+// GitHub repo voor on-demand refresh trigger
+const GH_OWNER = "tomdhqqn";
+const GH_REPO  = "Powned";
+const GH_WORKFLOW = "refresh.yml";
+const PAT_KEY = "powned_github_pat";
 const STATE_KEY = "powned_state_v1";
 
 let DATA = { items: [], generatedAt: null };
@@ -163,6 +181,7 @@ function defaultState() {
   return {
     status: {},
     filters: { minScore: 50, sources: [], categories: CATEGORIES.slice(),
+               locations: LOCATIONS.slice(),
                statusTab: "open", date: "all", sort: "score" }
   };
 }
@@ -219,6 +238,7 @@ function applyFilters() {
     if ((it.score || 0) < f.minScore) return false;
     if (!f.sources.includes(it.source)) return false;
     if (!f.categories.includes(it.category || "Overig")) return false;
+    if (!f.locations.includes(it.location || "Landelijk")) return false;
     if (cutoff && new Date(it.pubDate).getTime() < cutoff) return false;
     const st = state.status[it.id];
     if (f.statusTab === "open" && st) return false;
@@ -254,6 +274,10 @@ function renderFilters() {
 
   document.getElementById("categoryFilters").innerHTML = CATEGORIES.map(c =>
     `<label class="check"><input type="checkbox" data-cat="${c}" ${state.filters.categories.includes(c) ? "checked" : ""} /> ${c}</label>`
+  ).join("");
+
+  document.getElementById("locationFilters").innerHTML = LOCATIONS.map(l =>
+    `<label class="check"><input type="checkbox" data-loc="${escapeHtml(l)}" ${state.filters.locations.includes(l) ? "checked" : ""} /> ${escapeHtml(l)}</label>`
   ).join("");
 
   const sources = window.__allSources || [];
@@ -312,6 +336,82 @@ function renderFeed() {
 
 // Events
 document.getElementById("refreshBtn").addEventListener("click", loadFeeds);
+
+// ===== On-demand RSS-run trigger (vereist GitHub PAT) =====
+async function triggerFreshRun() {
+  let pat = localStorage.getItem(PAT_KEY);
+  if (!pat) {
+    pat = prompt(
+      "Voer je GitHub Personal Access Token in.\n\n" +
+      "Hoe maak je 'm:\n" +
+      "1. Ga naar github.com/settings/personal-access-tokens/new\n" +
+      "2. Repository access: alleen 'Powned'\n" +
+      "3. Permissions: Actions = Read and write\n" +
+      "4. Genereer, kopieer en plak hieronder.\n\n" +
+      "(De token blijft lokaal in deze browser opgeslagen.)"
+    );
+    if (!pat) return;
+    pat = pat.trim();
+    if (!pat.startsWith("github_pat_") && !pat.startsWith("ghp_")) {
+      alert("Dit ziet er niet uit als een geldige GitHub PAT. Annuleren.");
+      return;
+    }
+    localStorage.setItem(PAT_KEY, pat);
+  }
+
+  const btn = document.getElementById("triggerBtn");
+  const origText = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = "⏳ Trigger run…";
+
+  try {
+    const r = await fetch(
+      `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/actions/workflows/${GH_WORKFLOW}/dispatches`,
+      {
+        method: "POST",
+        headers: {
+          "Accept": "application/vnd.github+json",
+          "Authorization": `Bearer ${pat}`,
+          "X-GitHub-Api-Version": "2022-11-28",
+        },
+        body: JSON.stringify({ ref: "main" }),
+      }
+    );
+    if (r.status === 204) {
+      btn.textContent = "✓ Gestart — ~2 min";
+      alert(
+        "Refresh-run gestart!\n\n" +
+        "Wacht ~2 minuten en klik daarna Vernieuwen om de nieuwe items te zien.\n" +
+        "Voortgang volgen kan op:\n" +
+        `https://github.com/${GH_OWNER}/${GH_REPO}/actions`
+      );
+      // Auto-reload feeds.json na 2 minuten
+      setTimeout(loadFeeds, 120 * 1000);
+    } else if (r.status === 401 || r.status === 403) {
+      localStorage.removeItem(PAT_KEY);
+      alert("PAT is ongeldig of heeft niet de juiste rechten. Probeer opnieuw — je wordt om een nieuwe gevraagd.");
+      btn.textContent = origText;
+    } else {
+      const txt = await r.text();
+      alert(`Onverwachte fout (HTTP ${r.status}):\n${txt.slice(0, 300)}`);
+      btn.textContent = origText;
+    }
+  } catch (e) {
+    alert("Netwerkfout bij triggeren: " + e.message);
+    btn.textContent = origText;
+  } finally {
+    setTimeout(() => { btn.disabled = false; btn.textContent = origText; }, 5000);
+  }
+}
+document.getElementById("triggerBtn").addEventListener("click", triggerFreshRun);
+
+// Extra: dubbelklik op de knop wist de opgeslagen PAT (handig bij rotaten)
+document.getElementById("triggerBtn").addEventListener("dblclick", () => {
+  if (localStorage.getItem(PAT_KEY) && confirm("Opgeslagen PAT wissen?")) {
+    localStorage.removeItem(PAT_KEY);
+    alert("PAT gewist. Volgende klik op 'Nieuwe run' vraagt om een nieuwe.");
+  }
+});
 document.getElementById("scoreSlider").addEventListener("input", e => {
   state.filters.minScore = +e.target.value;
   document.getElementById("scoreVal").textContent = e.target.value;
@@ -330,6 +430,12 @@ document.getElementById("categoryFilters").addEventListener("change", e => {
   else state.filters.categories = state.filters.categories.filter(x => x !== c);
   saveState(); renderFeed();
 });
+document.getElementById("locationFilters").addEventListener("change", e => {
+  const l = e.target.dataset.loc; if (!l) return;
+  if (e.target.checked) state.filters.locations.push(l);
+  else state.filters.locations = state.filters.locations.filter(x => x !== l);
+  saveState(); renderFeed();
+});
 document.getElementById("sourceFilters").addEventListener("change", e => {
   const s = e.target.dataset.src; if (!s) return;
   if (e.target.checked) state.filters.sources.push(s);
@@ -342,6 +448,7 @@ document.getElementById("dateFilters").addEventListener("change", e => {
 document.getElementById("resetFilters").addEventListener("click", () => {
   state.filters = defaultState().filters;
   if (window.__allSources) state.filters.sources = window.__allSources.slice();
+  state.filters.locations = LOCATIONS.slice();
   saveState(); render();
 });
 document.getElementById("feed").addEventListener("click", e => {
